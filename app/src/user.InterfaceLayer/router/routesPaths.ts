@@ -4,7 +4,6 @@ enum RoutesPaths {
 	DEFAULT = "",
 	SVYATOSLAV_ZHILIN = "/svyatoslavZhilin",
 	IVAN_KOSTEEV = "/ivanKosteev",
-	ARTEM_LESKIN = "/artemLeskin",
 }
 
 export default RoutesPaths;
