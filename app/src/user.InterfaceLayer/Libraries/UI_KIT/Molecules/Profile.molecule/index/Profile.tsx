@@ -6,7 +6,7 @@ import * as ST from "../styled/styled";
 const Profile = () => {
 	return (
 		<div>
-			<Link to="/ivanKosteev/fishing/cart">
+			<Link to="/cart">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="40"
@@ -20,7 +20,7 @@ const Profile = () => {
 					/>
 				</svg>
 			</Link>
-			<Link to="/ivanKosteev/fishing/account">
+			<Link to="/account">
 				<ST.profile
 					xmlns="http://www.w3.org/2000/svg"
 					width="40"
