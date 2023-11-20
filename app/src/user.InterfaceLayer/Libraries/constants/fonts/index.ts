@@ -44,3 +44,5 @@ export const fonts = {
 		lineHeight: "120%",
 	},
 };
+
+export default fonts;
