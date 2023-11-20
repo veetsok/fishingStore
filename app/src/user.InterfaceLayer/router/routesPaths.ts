@@ -1,9 +1,10 @@
 enum RoutesPaths {
 	NOT_FOUND = "*",
+	ACCOUNT = "ACCOUNT",
 	MAIN = "/",
-	DEFAULT = "",
-	SVYATOSLAV_ZHILIN = "/svyatoslavZhilin",
-	IVAN_KOSTEEV = "/ivanKosteev",
+	CHECK = "CHECK",
+	FISHING = "FISHING",
+	CART = "CART",
 }
 
 export default RoutesPaths;
