@@ -1,13 +1,11 @@
 import React from "react";
-import Footer from "user.InterfaceLayer/Libraries/Widgets/Footer/index";
-import Navbar from "user.InterfaceLayer/Libraries/Widgets/Navbar/index/Navbar";
 import MainComponent from "user.InterfaceLayer/Components/ui.components.bll/MainPage.component.bll";
 import i18n from "user.InterfaceLayer/Components/ui.components.bll/I18next/i18n";
 import { I18nextProvider } from "react-i18next";
 
 // import { useParams } from "react-router-dom";
 
-import * as ST from "../../Libraries/constants/container/styled";
+import * as ST from "./styled";
 
 // interface MainPageProps {
 // 	id: string;
@@ -20,14 +18,10 @@ const MainPage: React.FC = () => {
 		<I18nextProvider i18n={i18n}>
 			<>
 				<ST.container>
-					<Navbar />
 					<MainComponent
 					// id={id || ""}
 					/>
 				</ST.container>
-				<ST.footer>
-					<Footer />
-				</ST.footer>
 			</>
 		</I18nextProvider>
 	);

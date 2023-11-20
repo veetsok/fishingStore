@@ -17,6 +17,8 @@ export const MainContent = styled.div`
 `;
 
 export const FooterContainer = styled.div`
-	padding: 1.5625em 0;
+	padding: 60px 0 80px 0;
 	background: transparent;
+	background: #0c1b32;
+	border-radius: 20px 20px 0px 0px;
 `;

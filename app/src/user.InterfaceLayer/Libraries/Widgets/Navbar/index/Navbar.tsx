@@ -7,6 +7,7 @@ import i18n from "user.InterfaceLayer/Components/ui.components.bll/I18next/i18n"
 
 import * as ST from "../styled/styled";
 
+
 const Navbar: React.FC = () => {
 	const { t } = useTranslation();
 
@@ -15,13 +16,15 @@ const Navbar: React.FC = () => {
 	};
 
 	return (
-		<ST.header>
-			<Logo desciption={t("navbar.logo")} />
-			<Category text={t("navbar.NavbarText", { returnObjects: true })} />
-			<Profile />
-			<button onClick={() => handleLanguageChange("ru")}>RU</button>
-			<button onClick={() => handleLanguageChange("de")}>DE</button>
-		</ST.header>
+		<ST.container>
+			<ST.header>
+				<Logo desciption={t("navbar.logo")} />
+				<Category text={t("navbar.NavbarText", { returnObjects: true })} />
+				<Profile />
+				<button onClick={() => handleLanguageChange("ru")}>RU</button>
+				<button onClick={() => handleLanguageChange("de")}>DE</button>
+			</ST.header>
+		</ST.container>
 	);
 };
 
