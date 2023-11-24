@@ -1,6 +1,7 @@
 import React from "react";
+import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
+import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
 
-import SubTitle from "../../../Atoms/SubTitle/index";
 import * as ST from "../styled/styled";
 import PayBlock from "../../PayBlock";
 
@@ -28,7 +29,7 @@ const CheckMethod: React.FC<CheckMethodProps> = ({
 	return (
 		<ST.container>
 			<ST.subtitle>
-				<SubTitle title={textPaymentTitle} />
+				<Text type={TextEnum.enum_Text_H2}>{textPaymentTitle}</Text>
 			</ST.subtitle>
 			<ST.text>
 				{payment.map((pay: any) => (
@@ -44,7 +45,7 @@ const CheckMethod: React.FC<CheckMethodProps> = ({
 
 			<ST.delivery>
 				<ST.subtitle>
-					<SubTitle title={textDeliveryTitle} />
+					<Text type={TextEnum.enum_Text_H2}>{textDeliveryTitle}</Text>
 				</ST.subtitle>
 				<ST.text>
 					<ST.delivery_block>

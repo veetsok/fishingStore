@@ -10,9 +10,9 @@ const commonTextFonts = {
 	},
 	[TextEnum.enum_Text_H2]: {
 		fontFamily: "Unbounded",
-		fontSize: "20px",
+		fontSize: "24px",
 		fontStyle: "normal",
-		fontWeight: 500,
+		fontWeight: 700,
 		lineHeight: "135%",
 	},
 	[TextEnum.enum_Text_H3]: {
@@ -29,10 +29,11 @@ const commonTextFonts = {
 		lineHeight: "110%",
 	},
 	[TextEnum.enum_Text_H5]: {
-		fontSize: "18px",
+		fontFamily: "Open Sans",
+		fontSize: "16px",
 		fontStyle: "normal",
-		fontWeight: 400,
-		lineHeight: "100%",
+		fontWeight: 500,
+		lineHeight: "135%",
 	},
 	[TextEnum.enum_Text_H6]: {
 		fontSize: "16px",
