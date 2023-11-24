@@ -6,9 +6,8 @@ import { useTranslation } from "react-i18next";
 import i18n from "user.InterfaceLayer/Components/I18next/i18n";
 
 import * as ST from "../styled/styled";
-// import { NavbarText } from "../const";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
 	const { t } = useTranslation();
 
 	const handleLanguageChange = (lng: any) => {

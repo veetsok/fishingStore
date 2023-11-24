@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 
 import * as ST from "./styled/styled";
 import TextEnum from "./enum";
@@ -87,4 +87,4 @@ const Text: React.FC<TextType> = (props: TextType) => {
 };
 
 Text.defaultProps = ITextPropsDefault;
-export default memo(Text);
+export default React.memo(Text);
