@@ -2,7 +2,11 @@ import styled from "styled-components";
 import { fonts } from "user.InterfaceLayer/Libraries/constants/fonts";
 import Colors from "user.InterfaceLayer/constants/colors";
 
-export const Button = styled.button`
+interface Button {
+	isLoading?: boolean;
+}
+
+export const PrimaryButton = styled.button<Button>`
 	border-radius: 5px;
 	background: ${Colors.BLUE__PRIMARY};
 	color: ${Colors.WHITE};
@@ -16,3 +20,5 @@ export const Button = styled.button`
 	line-height: ${fonts.primaryBtn.lineHeight};
 	letter-spacing: ${fonts.primaryBtn.letterSpacing};
 `;
+
+export const Button = styled.div<Button>``;

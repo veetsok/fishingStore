@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import Colors from "user.InterfaceLayer/Libraries/constants/colors";
 import { fonts } from "user.InterfaceLayer/Libraries/constants/fonts";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 export const order = styled.div`
 	border-radius: 10px;
-	border: 2px solid ${Colors.BG};
+	border: 2px solid ${Colors.TEXT__PRIMARY};
 	margin-bottom: 30px;
 `;
 export const title = styled.div`
@@ -13,7 +13,7 @@ export const title = styled.div`
 	align-items: center;
 	padding: 20px;
 	border-radius: 10px;
-	background: ${Colors.BG};
+	background: ${Colors.TEXT__PRIMARY};
 	span {
 		color: ${Colors.BLUE__PRIMARY};
 	}

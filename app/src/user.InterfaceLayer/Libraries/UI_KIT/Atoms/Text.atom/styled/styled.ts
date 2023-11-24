@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 import TextEnum from "../enum";
-import Colors from "../../../../constants/colors";
 import commonTextFonts from "../constants/fonts";
 import { commonTextStyles } from "../constants/commonTextStyles";
 
@@ -10,7 +10,7 @@ interface Text {
 }
 
 export const H1 = styled.h1<Text>`
-	color: var(--black, ${Colors.BG__FOOTER});
+	color: var(--black, ${Colors.TEXT__PRIMARY});
 	font-family: ${commonTextFonts[TextEnum.enum_Text_H1].fontFamily};
 	font-size: ${commonTextFonts[TextEnum.enum_Text_H1].fontSize};
 	font-style: ${commonTextFonts[TextEnum.enum_Text_H1].fontStyle};
@@ -52,7 +52,7 @@ export const H6 = styled.h6<Text>`
 
 export const Text = styled.div<Text>`
 	${commonTextStyles};
-	color: ${Colors.BG};
+	color: ${Colors.TEXT__PRIMARY};
 	font-size: ${commonTextFonts[TextEnum.enum_Text_H5].fontSize};
 	font-style: ${commonTextFonts[TextEnum.enum_Text_H5].fontStyle};
 	font-weight: ${commonTextFonts[TextEnum.enum_Text_H5].fontWeight};

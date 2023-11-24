@@ -26,6 +26,6 @@ export const MainContent = styled.div`
 `;
 
 export const FooterContainer = styled.div`
-	background: ${Colors.DARK__PRIMARY};
+	background: ${Colors.TEXT__PRIMARY};
 	border-radius: 20px 20px 0px 0px;
 `;

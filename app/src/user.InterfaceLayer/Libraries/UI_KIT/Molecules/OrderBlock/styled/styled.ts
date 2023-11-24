@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Colors from "user.InterfaceLayer/Libraries/constants/colors";
 import { fonts } from "user.InterfaceLayer/Libraries/constants/fonts";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 export const orders = styled.div`
 	padding: 15px 20px;
