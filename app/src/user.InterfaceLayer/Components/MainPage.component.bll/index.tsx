@@ -9,7 +9,7 @@ import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum"
 
 import * as ST from "../styled";
 
-const MainComponent = () => {
+const MainComponent: React.FC = () => {
 	const { t } = useTranslation();
 	const {
 		data: products,

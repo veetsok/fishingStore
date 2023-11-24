@@ -8,4 +8,5 @@ export interface ButtonType extends ICommonComponentProps {
 	Icon?: JSX.Element | React.ReactNode | undefined;
 	isLoading?: boolean;
 	onClick?: () => void;
+	active?: boolean;
 }

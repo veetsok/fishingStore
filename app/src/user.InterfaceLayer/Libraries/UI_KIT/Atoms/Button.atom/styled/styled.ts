@@ -6,6 +6,7 @@ import ButtonEnum from "../enum";
 
 interface Button {
 	isLoading?: boolean;
+	active?: boolean;
 }
 
 export const PrimaryButton = styled.button<Button>`
@@ -45,21 +46,15 @@ export const CatalogButton = styled.button<Button>`
 	align-items: flex-start;
 	gap: 10px;
 	border-radius: 100px;
-	background: var(--light-blue, ${Colors.CATALOG__BG});
-	color: var(--black, ${Colors.TEXT__PRIMARY});
-	font-family: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontFamily};
-	font-size: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontSize};
-	font-style: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontStyle};
-	font-weight: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontWeight};
-	line-height: ${commonButtonFonts[ButtonEnum.enum_primaryButton].lineHeight};
-	letter-spacing: ${commonButtonFonts[ButtonEnum.enum_primaryButton]
-		.letterSpacing};
+	background: ${(props) =>
+		props.active ? Colors.BLUE__PRIMARY : Colors.CATALOG__BG};
+	color: ${(props) => (props.active ? Colors.WHITE : Colors.TEXT__PRIMARY)};
 	border: 2px solid transparent;
 	transition: all 0.3s;
 	&:hover {
-		border: 2px solid var(--blue, ${Colors.BLUE__PRIMARY});
-		background: var(--light-blue, ${Colors.CATALOG__BG});
-		color: var(--black, ${Colors.TEXT__PRIMARY});
+		border: 2px solid ${Colors.BLUE__PRIMARY};
+		background: ${Colors.CATALOG__BG};
+		color: ${Colors.TEXT__PRIMARY};
 	}
 `;
 
