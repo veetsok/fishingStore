@@ -1,18 +1,18 @@
-import { ReactNode } from "react";
+import { ICommonComponentProps } from "user.InterfaceLayer/constants/commonComponentProps";
 
 import TextEnum from "../enum";
 
 export interface TextStyleProps {
-	color?: string;
-	margin?: string;
-	align?: string;
-	isLoading?: boolean;
+	isLoading?: ICommonComponentProps["isLoading"];
+	color?: ICommonComponentProps["color"];
+	margin?: ICommonComponentProps["margin"];
+	align?: ICommonComponentProps["align"];
 }
-export interface TextType {
+export interface TextType extends ICommonComponentProps {
 	type: TextEnum;
-	children?: JSX.Element | ReactNode | string;
-	isLoading?: boolean;
-	color?: string;
-	margin?: string;
-	align?: string;
+	children?: ICommonComponentProps["children"];
+	isLoading?: ICommonComponentProps["isLoading"];
+	color?: ICommonComponentProps["color"];
+	margin?: ICommonComponentProps["margin"];
+	align?: ICommonComponentProps["align"];
 }
