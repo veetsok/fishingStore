@@ -1,7 +1,8 @@
 import React from "react";
-import Title from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Title/index";
 import CartList from "user.InterfaceLayer/Libraries/IvanKosteev.library/Widgets/CartList/index";
 import { useTranslation } from "react-i18next";
+import Text from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Text.atom";
+import TextEnum from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Text.atom/enum";
 
 import * as ST from "../styled";
 
@@ -10,7 +11,7 @@ const CartComponent = () => {
 
 	return (
 		<ST.container>
-			<Title title={t("cart.title")} />
+			<Text type={TextEnum.enum_Text_H1}>{t("cart.title")}</Text>
 
 			<CartList
 				paragragh={t("cart.emptyCart.paragragh")}

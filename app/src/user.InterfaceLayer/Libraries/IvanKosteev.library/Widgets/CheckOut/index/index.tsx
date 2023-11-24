@@ -1,9 +1,10 @@
 import React from "react";
 import CheckMethod from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Molecules/CheckOut.molecule/index";
 import EmptyCart from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Molecules/EmpryCart/index";
-import Title from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Title/index";
 import CheckTotal from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Molecules/CheckTotal/index";
 import { useAppSelector } from "business.InterfaceLayer/store/services/hooks/redux";
+import Text from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Text.atom";
+import TextEnum from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Text.atom/enum";
 
 import * as ST from "../styled/styled";
 import { CheckOutWidgetProps } from "../type";
@@ -32,7 +33,7 @@ const CheckOutWidget: React.FC<CheckOutWidgetProps> = ({
 				paragragh=""
 				span="Вернуться к корзине"
 			/>
-			<Title title="Оформление заказа" />
+			<Text type={TextEnum.enum_Text_H1}>Оформление заказа</Text>
 
 			<ST.container>
 				<ST.block>

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Title from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Title/index";
 import CardList from "user.InterfaceLayer/Libraries/IvanKosteev.library/Widgets/CardList/index";
 import { useGetAllFishingQuery } from "business.InterfaceLayer/store/shared/entities/ivanKosteev.entities/todo.entity/redux/api";
 import { addItem } from "business.InterfaceLayer/store/shared/entities/ivanKosteev.entities/todo.entity/redux/slice/CartSlice";
 import { useAppDispatch } from "business.InterfaceLayer/store/services/hooks/redux";
 import { useTranslation } from "react-i18next";
+import Text from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Text.atom";
+import TextEnum from "user.InterfaceLayer/Libraries/IvanKosteev.library/UI_KIT/Atoms/Text.atom/enum";
 
 import * as ST from "../styled";
 
@@ -49,7 +50,7 @@ const MainComponent = () => {
 	return (
 		<ST.container>
 			<ST.div>
-				<Title title={t("catalog.title")} />
+				<Text type={TextEnum.enum_Text_H1}>{t("catalog.title")}</Text>
 				<CardList
 					CatalogData={catalogData}
 					error={error}
