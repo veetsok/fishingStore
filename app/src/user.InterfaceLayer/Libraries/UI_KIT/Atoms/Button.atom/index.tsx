@@ -6,7 +6,7 @@ import { IButtonPropsDefault } from "./mock";
 import { ButtonType } from "./type";
 
 const Button: React.FC<ButtonType> = (props: ButtonType) => {
-	const { children, onClick, type, isLoading } = props;
+	const { children, onClick, active, type, isLoading } = props;
 	if (isLoading) return <>Loading</>;
 	switch (type) {
 		case ButtonEnum.enum_primaryButton: {
@@ -34,6 +34,7 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 				<ST.CatalogButton
 					onClick={onClick}
 					isLoading={isLoading}
+					active={active}
 				>
 					{children}
 				</ST.CatalogButton>

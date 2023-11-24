@@ -1,6 +1,7 @@
 import React from "react";
+import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
+import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 
-import ButtonCatalog from "../../../Atoms/ButtonCatalog/index/Button";
 import { CatalogProps } from "../type";
 
 const Catalog: React.FC<CatalogProps> = ({
@@ -11,12 +12,14 @@ const Catalog: React.FC<CatalogProps> = ({
 	return (
 		<>
 			{CatalogData.map((e: any) => (
-				<ButtonCatalog
+				<Button
+					type={ButtonEnum.enum_catalogButton}
 					key={e.id}
-					description={e.title}
-					handleTitleClick={() => handleCategoryClick(e.title)}
+					onClick={() => handleCategoryClick(e.title)}
 					active={selectedCategory === e.title}
-				/>
+				>
+					{e.title}
+				</Button>
 			))}
 		</>
 	);
