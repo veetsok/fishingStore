@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { fonts } from "user.InterfaceLayer/Libraries/constants/fonts";
 import Colors from "user.InterfaceLayer/constants/colors";
+
+import commonButtonFonts from "../constants/fonts";
+import ButtonEnum from "../enum";
 
 interface Button {
 	isLoading?: boolean;
@@ -13,12 +15,13 @@ export const PrimaryButton = styled.button<Button>`
 	width: 100%;
 	padding: 20px 30px;
 	justify-content: center;
-	font-family: ${fonts.primaryBtn.fontFamily};
-	font-size: ${fonts.primaryBtn.fontSize};
-	font-style: ${fonts.primaryBtn.fontStyle};
-	font-weight: ${fonts.primaryBtn.fontWeight};
-	line-height: ${fonts.primaryBtn.lineHeight};
-	letter-spacing: ${fonts.primaryBtn.letterSpacing};
+	font-family: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontFamily};
+	font-size: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontSize};
+	font-style: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontStyle};
+	font-weight: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontWeight};
+	line-height: ${commonButtonFonts[ButtonEnum.enum_primaryButton].lineHeight};
+	letter-spacing: ${commonButtonFonts[ButtonEnum.enum_primaryButton]
+		.letterSpacing};
 `;
 
 export const AccountButton = styled.button<Button>`
@@ -27,12 +30,37 @@ export const AccountButton = styled.button<Button>`
 	background: ${Colors.TRANSPARENT};
 	color: ${Colors.WHITE};
 	padding: 20px 30px;
-	font-family: ${fonts.secondaryBtn.fontFamily};
-	font-size: ${fonts.secondaryBtn.fontSize};
-	font-style: ${fonts.secondaryBtn.fontStyle};
-	font-weight: ${fonts.secondaryBtn.fontWeight};
-	line-height: ${fonts.secondaryBtn.lineHeight};
-	letter-spacing: ${fonts.secondaryBtn.letterSpacing};
+	font-family: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontFamily};
+	font-size: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontSize};
+	font-style: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontStyle};
+	font-weight: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontWeight};
+	line-height: ${commonButtonFonts[ButtonEnum.enum_accountButton].lineHeight};
+	letter-spacing: ${commonButtonFonts[ButtonEnum.enum_accountButton]
+		.letterSpacing};
+`;
+
+export const CatalogButton = styled.button<Button>`
+	display: inline-block;
+	padding: 15px 25px;
+	align-items: flex-start;
+	gap: 10px;
+	border-radius: 100px;
+	background: var(--light-blue, ${Colors.CATALOG__BG});
+	color: var(--black, ${Colors.TEXT__PRIMARY});
+	font-family: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontFamily};
+	font-size: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontSize};
+	font-style: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontStyle};
+	font-weight: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontWeight};
+	line-height: ${commonButtonFonts[ButtonEnum.enum_primaryButton].lineHeight};
+	letter-spacing: ${commonButtonFonts[ButtonEnum.enum_primaryButton]
+		.letterSpacing};
+	border: 2px solid transparent;
+	transition: all 0.3s;
+	&:hover {
+		border: 2px solid var(--blue, ${Colors.BLUE__PRIMARY});
+		background: var(--light-blue, ${Colors.CATALOG__BG});
+		color: var(--black, ${Colors.TEXT__PRIMARY});
+	}
 `;
 
 export const Button = styled.div<Button>``;

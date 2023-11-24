@@ -14,7 +14,9 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 				<ST.PrimaryButton
 					onClick={onClick}
 					isLoading={isLoading}
-				>{children}</ST.PrimaryButton>
+				>
+					{children}
+				</ST.PrimaryButton>
 			);
 		}
 		case ButtonEnum.enum_accountButton: {
@@ -22,7 +24,19 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 				<ST.AccountButton
 					onClick={onClick}
 					isLoading={isLoading}
-				>{children}</ST.AccountButton>
+				>
+					{children}
+				</ST.AccountButton>
+			);
+		}
+		case ButtonEnum.enum_catalogButton: {
+			return (
+				<ST.CatalogButton
+					onClick={onClick}
+					isLoading={isLoading}
+				>
+					{children}
+				</ST.CatalogButton>
 			);
 		}
 		default: {
