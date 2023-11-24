@@ -14,8 +14,15 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 				<ST.PrimaryButton
 					onClick={onClick}
 					isLoading={isLoading}
-					children={children}
-				/>
+				>{children}</ST.PrimaryButton>
+			);
+		}
+		case ButtonEnum.enum_accountButton: {
+			return (
+				<ST.AccountButton
+					onClick={onClick}
+					isLoading={isLoading}
+				>{children}</ST.AccountButton>
 			);
 		}
 		default: {

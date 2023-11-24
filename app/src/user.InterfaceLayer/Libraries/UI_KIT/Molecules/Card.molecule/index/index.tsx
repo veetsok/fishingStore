@@ -1,6 +1,7 @@
 import React from "react";
-import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button/index/Button";
 import { useTranslation } from "react-i18next";
+import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
+import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 
 import * as ST from "../styled/styled";
 
@@ -28,10 +29,9 @@ const Card = ({ name, image, price, handleAddToCart }: Props) => {
 				<ST.title>{name}</ST.title>
 				<ST.price>{price} ₽</ST.price>
 				<ST.btn onClick={handleAddToCart}>
-					<Button
-						type=""
-						desciption={t("main.button")}
-					/>
+					<Button type={ButtonEnum.enum_primaryButton}>
+						{t("main.button")}
+					</Button>
 				</ST.btn>
 			</ST.block>
 		</ST.container>
