@@ -9,7 +9,7 @@ type Props = {
 
 const Logo = ({ desciption }: Props) => {
 	return (
-		<Link to={"/fishing"}>
+		<Link to={"/"}>
 			<ST.Logo>{desciption}</ST.Logo>
 		</Link>
 	);

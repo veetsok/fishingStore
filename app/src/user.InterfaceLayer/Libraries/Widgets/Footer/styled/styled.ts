@@ -5,7 +5,6 @@ export const footer = styled.div`
 	a {
 		color: ${Colors.WHITE};
 	}
-
 	display: flex;
 	justify-content: space-between;
 	padding: 67px 0 88px 0;
