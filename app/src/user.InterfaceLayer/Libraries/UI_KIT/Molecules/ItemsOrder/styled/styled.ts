@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Colors from "user.InterfaceLayer/Libraries/constants/colors";
 import { fonts } from "user.InterfaceLayer/Libraries/constants/fonts";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 export const Button = styled.button`
 	border-radius: 5px;
@@ -18,7 +18,7 @@ export const Button = styled.button`
 `;
 export const orders = styled.div`
 	border-radius: 10px;
-	border: 2px solid ${Colors.BG};
+	border: 2px solid ${Colors.TEXT__PRIMARY};
 `;
 export const title = styled.div`
 	display: flex;
@@ -26,7 +26,7 @@ export const title = styled.div`
 	align-items: center;
 	padding: 20px;
 	border-radius: 10px;
-	background: ${Colors.BG};
+	background: ${Colors.TEXT__PRIMARY};
 	span {
 		color: ${Colors.BLUE__PRIMARY};
 	}

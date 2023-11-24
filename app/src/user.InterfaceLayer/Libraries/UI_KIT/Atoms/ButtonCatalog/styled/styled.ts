@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Colors from "user.InterfaceLayer/Libraries/constants/colors";
 import { fonts } from "user.InterfaceLayer/Libraries/constants/fonts";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 export const Button = styled.button`
 	display: inline-block;
@@ -10,7 +10,7 @@ export const Button = styled.button`
 	gap: 10px;
 	border-radius: 100px;
 	background: var(--light-blue, ${Colors.CATALOG__BG});
-	color: var(--black, ${Colors.BG__FOOTER});
+	color: var(--black, ${Colors.TEXT__PRIMARY});
 	font-family: ${fonts.primaryBtn.fontFamily};
 	font-size: ${fonts.primaryBtn.fontSize};
 	font-style: ${fonts.primaryBtn.fontStyle};
@@ -22,6 +22,6 @@ export const Button = styled.button`
 	&:hover {
 		border: 2px solid var(--blue, ${Colors.BLUE__PRIMARY});
 		background: var(--light-blue, ${Colors.CATALOG__BG});
-		color: var(--black, ${Colors.BG__FOOTER});
+		color: var(--black, ${Colors.TEXT__PRIMARY});
 	}
 `;

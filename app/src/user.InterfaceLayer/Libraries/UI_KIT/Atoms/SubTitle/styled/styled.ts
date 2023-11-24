@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Colors from "user.InterfaceLayer/Libraries/constants/colors";
 import { fonts } from "user.InterfaceLayer/Libraries/constants/fonts";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 export const title = styled.h3`
 	color:${Colors.TEXT__PRIMARY}
