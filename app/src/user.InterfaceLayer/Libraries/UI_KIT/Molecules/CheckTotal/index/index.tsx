@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
+import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 
-import Button from "../../../Atoms/Button/index/Button";
 import * as ST from "../styled/styled";
 interface CheckTotalProps {
 	total: any;
@@ -17,7 +18,6 @@ interface CheckTotalProps {
 
 const CheckTotal: React.FC<CheckTotalProps> = ({
 	total,
-	type,
 	quantity,
 	link,
 	textTitle,
@@ -40,10 +40,7 @@ const CheckTotal: React.FC<CheckTotalProps> = ({
 			</ST.block>
 			<div onClick={handleCheckout}>
 				<Link to={link}>
-					<Button
-						desciption={textButton}
-						type={type}
-					/>
+					<Button type={ButtonEnum.enum_primaryButton}>{textButton}</Button>
 				</Link>
 			</div>
 		</ST.total>
