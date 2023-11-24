@@ -12,7 +12,6 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 		case ImageEnum.enum_defaultImage: {
 			return (
 				<ST.DefaultImage
-					icon={icon}
 					isLoading={isLoading}
 					src={src}
 				/>

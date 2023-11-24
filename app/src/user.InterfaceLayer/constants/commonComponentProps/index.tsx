@@ -21,6 +21,7 @@ export enum CommonComponentsProps {
 	color = "color",
 	margin = "margin",
 	align = "align",
+	active = "active",
 }
 
 export interface ICommonComponentProps {
@@ -38,6 +39,7 @@ export interface ICommonComponentProps {
 	[CommonComponentsProps.autoFocus]?: boolean;
 	[CommonComponentsProps.required]?: boolean;
 	[CommonComponentsProps.disabled]?: boolean;
+	[CommonComponentsProps.active]?: boolean;
 	[CommonComponentsProps.background]?: string;
 	[CommonComponentsProps.src]?: string;
 	[CommonComponentsProps.key]?: number;
