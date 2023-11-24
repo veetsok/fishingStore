@@ -5,6 +5,7 @@ enum Colors {
 	TRANSPARENT = "transparent",
 	CATALOG__BG = "#D9E3F8",
 	CATALOG = "0C1B32",
+	DARK__PRIMARY = "#0c1b32",
 }
 
 export default Colors;

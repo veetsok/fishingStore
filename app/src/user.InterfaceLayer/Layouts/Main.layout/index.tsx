@@ -1,20 +1,36 @@
-import React, { FC } from "react";
-import { Link, Outlet } from "react-router-dom";
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "user.InterfaceLayer/Libraries/Widgets/Navbar/index/Navbar";
+import Footer from "user.InterfaceLayer/Libraries/Widgets/Footer/index";
 
-// import Navbar from "user.InterfaceLayer/Libraries/SvyatoslavZhilin.library/UI_KIT/Molecules/Navbar.molecule/const/Navbar";
-import * as ST from "./styled";
+import * as ST from "./styled/styled";
 
-const KosteevLayout: FC = () => (
-	<ST.bg>
-		<div style={{ padding: 20 }}>
-			<Link to={"/"}>main кнопка</Link>
-		</div>
-		<div style={{ padding: 20 }}>
-			<Link to={"/fishing"}>Рыболовный магазин</Link>
-		</div>
+const MainLayout: React.FC = () => (
+	<ST.PageContainer>
+		<ST.NavContainer>
+			<ST.Container>
+				<ST.ResetContainer>
+					<Navbar />
+				</ST.ResetContainer>
+			</ST.Container>
+		</ST.NavContainer>
 
-		<Outlet />
-	</ST.bg>
+		<ST.MainContent>
+			<ST.Container>
+				<ST.ResetContainer>
+					<Outlet />
+				</ST.ResetContainer>
+			</ST.Container>
+		</ST.MainContent>
+
+		<ST.FooterContainer>
+			<ST.Container>
+				<ST.ResetContainer>
+					<Footer />
+				</ST.ResetContainer>
+			</ST.Container>
+		</ST.FooterContainer>
+	</ST.PageContainer>
 );
 
-export default KosteevLayout;
+export default MainLayout;

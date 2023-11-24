@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const container = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+	margin: 40px 15px;
 `;
 
 export const block = styled.div`
 	width: 370px;
-	margin: 40px 15px;
 	height: 443px;
 `;
 

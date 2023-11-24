@@ -5,4 +5,5 @@ export const block = styled.div`
 	margin-top: 20px;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin: 0 -15px;
 `;
