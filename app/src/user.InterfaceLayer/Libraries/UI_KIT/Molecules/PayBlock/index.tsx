@@ -1,8 +1,9 @@
 import React from "react";
+import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 
 import * as ST from "./styled";
-import Text from "../../Atoms/Text/index";
 import InputMethod from "../../Atoms/InputMethod/index";
+import TextEnum from "../../Atoms/Text.atom/enum";
 
 interface PayBlockProps {
 	name: string;
@@ -25,7 +26,7 @@ const PayBlock: React.FC<PayBlockProps> = ({
 				value={value}
 				checked={checked}
 			/>
-			<Text text={name} />
+			<Text type={TextEnum.enum_Text_H5}>{name}</Text>
 		</ST.text>
 	);
 };

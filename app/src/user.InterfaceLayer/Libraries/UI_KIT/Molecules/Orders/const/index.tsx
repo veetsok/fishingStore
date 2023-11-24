@@ -1,10 +1,9 @@
 import React from "react";
+import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
+import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 
-import SubTitle from "../../../Atoms/SubTitle/index";
-// import OrderBlock from "../../OrderBlock/index";
-import * as ST from "../styled/styled";
 import OrderBlock from "../../OrderBlock/index";
-
+import * as ST from "../styled/styled";
 
 interface order {
 	id: string;
@@ -30,7 +29,7 @@ interface Props {
 const Orders: React.FC<Props> = ({ orders, handleClearOrder }) => {
 	return (
 		<>
-			<SubTitle title="Мои заказы" />
+			<Text type={TextEnum.enum_Text_H2}>Мои заказы</Text>
 			{orders.map((order) => (
 				<ST.order key={order.id}>
 					<ST.title>

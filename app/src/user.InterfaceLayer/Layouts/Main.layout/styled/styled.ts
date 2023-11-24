@@ -11,7 +11,6 @@ export const ResetContainer = styled.div`
 `;
 
 export const NavContainer = styled.div`
-	padding: 1.5625em 0;
 	background: transparent;
 `;
 

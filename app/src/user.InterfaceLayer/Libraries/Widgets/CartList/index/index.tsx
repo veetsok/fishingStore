@@ -61,7 +61,7 @@ const CartList: React.FC<CartListkProps> = ({
 				<ST.cart__block>
 					{items.length === 0 ? (
 						<EmptyCart
-							link="/ivanKosteev/fishing"
+							link="/fishing"
 							paragragh={paragragh}
 							span={span}
 						/>
@@ -87,7 +87,7 @@ const CartList: React.FC<CartListkProps> = ({
 				</ST.cart__block>
 
 				<CartTotal
-					link="/ivanKosteev/fishing/check"
+					link="/check"
 					quantity={totalQuantity}
 					total={total}
 					type=""
