@@ -47,4 +47,4 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 };
 
 Button.defaultProps = IButtonPropsDefault;
-export default Button;
+export default React.memo(Button);

@@ -14,6 +14,5 @@ export interface ImageType extends ICommonComponentProps {
 
 export interface ImageStyle {
 	isLoading?: ImageType["isLoading"];
-	icon?: ImageType["icon"];
 	background?: ImageType["background"];
 }
