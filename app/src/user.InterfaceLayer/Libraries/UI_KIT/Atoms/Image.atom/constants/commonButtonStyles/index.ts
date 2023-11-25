@@ -12,7 +12,7 @@ export const commonImageStyles = css<ImageStyleProps>`
 			: "none"};
 	border-radius: ${(props) =>
 		props.borderRadius ? props.borderRadius : "10px"};
-	height: ${(props) => (props.height ? props.height : "auto")};
-	margin: ${(props) => (props.margin ? props.margin : "auto")};
+	margin: ${(props) => props.margin};
+	height: ${(props) => props.height};
 	width: ${(props) => (props.width ? props.width : "100%")};
 `;

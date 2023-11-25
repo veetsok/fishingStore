@@ -17,25 +17,6 @@ export const list = styled.div`
 	margin-left: 23px;
 `;
 
-export const title = styled.div`
-	margin-top: 10px;
-	color: var(--black, ${Colors.TEXT__PRIMARY});
-	font-family: ${fonts.primaryBtn.fontFamily};
-	font-size: ${fonts.primaryBtn.fontSize};
-	font-style: ${fonts.primaryBtn.fontStyle};
-	font-weight: ${fonts.primaryBtn.fontWeight};
-	line-height: ${fonts.primaryBtn.lineHeight};
-`;
-
-export const price = styled.div`
-	margin-top: 10px;
-	color: var(--black-2, ${Colors.CART__PRICE});
-	font-family: ${fonts.cardPrice.fontFamily};
-	font-size: ${fonts.cardPrice.fontSize};
-	font-style: ${fonts.cardPrice.fontStyle};
-	font-weight: ${fonts.cardPrice.fontWeight};
-	line-height: ${fonts.cardPrice.lineHeight};
-`;
 export const count = styled.div`
 	display: flex;
 	margin-top: 10px;
