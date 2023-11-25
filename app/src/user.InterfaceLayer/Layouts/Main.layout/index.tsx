@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "user.InterfaceLayer/Libraries/Widgets/Navbar/index/Navbar";
+import Navbar from "user.InterfaceLayer/Libraries/Widgets/Navbar/index";
 import Footer from "user.InterfaceLayer/Libraries/Widgets/Footer/index";
 
 import * as ST from "./styled/styled";
