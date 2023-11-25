@@ -9,18 +9,11 @@ export const orders = styled.div`
 	align-items: center;
 `;
 
-export const imagesBl = styled.div`
+export const imagesBlock = styled.div`
 	display: flex;
 	justify-content: space-between;
 `;
-export const image = styled.div`
-	max-width: 75px;
-	margin-right: 10px;
-	& img {
-		width: 100%;
-		height: 60px;
-	}
-`;
+
 export const name = styled.div`
 	width: 217px;
 	display: flex;

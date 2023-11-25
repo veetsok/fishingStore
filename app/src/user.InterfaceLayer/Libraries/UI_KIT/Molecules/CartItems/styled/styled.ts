@@ -13,18 +13,6 @@ export const block = styled.div`
 	border-radius: 30px;
 `;
 
-export const image = styled.div`
-	border-radius: 10px;
-	width: 150px;
-	height: 150px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	& img {
-		height: 100%;
-		width: 100%;
-	}
-`;
 export const list = styled.div`
 	margin-left: 23px;
 `;
