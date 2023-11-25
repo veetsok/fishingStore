@@ -6,14 +6,26 @@ import { IImagePropsDefault } from "./mock";
 import { ImageType } from "./type";
 
 const Image: React.FC<ImageType> = (props: ImageType) => {
-	const { children, type, icon, isLoading, background, src, onClick } = props;
+	const {
+		children,
+		type,
+		icon,
+		isLoading,
+		height,
+		background,
+		src,
+		alt,
+		onClick,
+	} = props;
 	if (isLoading) return <>Loading</>;
 	switch (type) {
-		case ImageEnum.enum_defaultImage: {
+		case ImageEnum.enum_srcImage: {
 			return (
-				<ST.DefaultImage
+				<ST.SrcImage
+					height={height}
 					isLoading={isLoading}
 					src={src}
+					alt={alt}
 				/>
 			);
 		}
@@ -27,9 +39,9 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 				</ST.DefaultSvg>
 			);
 		}
-		case ImageEnum.enum_svgImage: {
+		case ImageEnum.enum_nodeSvgImage: {
 			return (
-				<ST.SvgImage
+				<ST.NodeSvgImage
 					isLoading={isLoading}
 					dangerouslySetInnerHTML={{ __html: children as string }}
 				/>
