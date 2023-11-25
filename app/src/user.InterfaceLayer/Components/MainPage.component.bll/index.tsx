@@ -49,18 +49,21 @@ const MainComponent: React.FC = () => {
 
 	return (
 		<ST.container>
-			<ST.div>
-				<Text type={TextEnum.enum_Text_H1}>{t("catalog.title")}</Text>
-				<CardList
-					CatalogData={catalogData}
-					error={error}
-					isLoading={isLoading}
-					handleAddToCart={handleAddToCart}
-					handleCategoryClick={handleCategoryClick}
-					filteredProducts={filteredProducts}
-					selectedCategory={selectedCategory}
-				/>
-			</ST.div>
+			<Text
+				margin="0 0 40px 0"
+				type={TextEnum.enum_Text_H1}
+			>
+				{t("catalog.title")}
+			</Text>
+			<CardList
+				CatalogData={catalogData}
+				error={error}
+				isLoading={isLoading}
+				handleAddToCart={handleAddToCart}
+				handleCategoryClick={handleCategoryClick}
+				filteredProducts={filteredProducts}
+				selectedCategory={selectedCategory}
+			/>
 		</ST.container>
 	);
 };

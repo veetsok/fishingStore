@@ -19,14 +19,15 @@ const commonTextFonts = {
 		fontFamily: "Unbounded",
 		fontSize: "20px",
 		fontStyle: "normal",
-		fontWeight: 400,
+		fontWeight: 500,
 		lineHeight: "135%",
 	},
 	[TextEnum.enum_Text_H4]: {
+		fontFamily: "Unbounded",
 		fontSize: "20px",
 		fontStyle: "normal",
 		fontWeight: 400,
-		lineHeight: "110%",
+		lineHeight: "135%",
 	},
 	[TextEnum.enum_Text_H5]: {
 		fontFamily: "Open Sans",
