@@ -3,19 +3,14 @@ import Colors from "user.InterfaceLayer/constants/colors";
 
 import commonButtonFonts from "../constants/fonts";
 import ButtonEnum from "../enum";
+import { ButtonStyleProps } from "../type";
+import { commonButtonStyles } from "../constants/commonButtonStyles";
+import { commonButtonAnimate } from "../constants/commonButtonStyles/animation";
 
-interface Button {
-	isLoading?: boolean;
-	active?: boolean;
-}
-
-export const PrimaryButton = styled.button<Button>`
-	border-radius: 5px;
+export const PrimaryButton = styled.button<ButtonStyleProps>`
+	${commonButtonStyles};
 	background: ${Colors.BLUE__PRIMARY};
 	color: ${Colors.WHITE};
-	width: 100%;
-	padding: 20px 30px;
-	justify-content: center;
 	font-family: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontFamily};
 	font-size: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontSize};
 	font-style: ${commonButtonFonts[ButtonEnum.enum_primaryButton].fontStyle};
@@ -25,12 +20,11 @@ export const PrimaryButton = styled.button<Button>`
 		.letterSpacing};
 `;
 
-export const AccountButton = styled.button<Button>`
-	border-radius: 5px;
+export const AccountButton = styled.button<ButtonStyleProps>`
+	${commonButtonStyles};
 	border: 1px solid ${Colors.WHITE};
 	background: ${Colors.TRANSPARENT};
 	color: ${Colors.WHITE};
-	padding: 20px 30px;
 	font-family: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontFamily};
 	font-size: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontSize};
 	font-style: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontStyle};
@@ -40,22 +34,20 @@ export const AccountButton = styled.button<Button>`
 		.letterSpacing};
 `;
 
-export const CatalogButton = styled.button<Button>`
-	display: inline-block;
-	padding: 15px 25px;
-	align-items: flex-start;
-	gap: 10px;
+export const CatalogButton = styled.button<ButtonStyleProps>`
+	${commonButtonStyles};
+	${commonButtonAnimate};
 	border-radius: 100px;
+	border: 2px solid transparent;
 	background: ${(props) =>
 		props.active ? Colors.BLUE__PRIMARY : Colors.CATALOG__BG};
 	color: ${(props) => (props.active ? Colors.WHITE : Colors.TEXT__PRIMARY)};
-	border: 2px solid transparent;
-	transition: all 0.3s;
-	&:hover {
-		border: 2px solid ${Colors.BLUE__PRIMARY};
-		background: ${Colors.CATALOG__BG};
-		color: ${Colors.TEXT__PRIMARY};
-	}
+
+	font-family: ${commonButtonFonts[ButtonEnum.enum_catalogButton].fontFamily};
+	font-size: ${commonButtonFonts[ButtonEnum.enum_catalogButton].fontSize};
+	font-style: ${commonButtonFonts[ButtonEnum.enum_catalogButton].fontStyle};
+	font-weight: ${commonButtonFonts[ButtonEnum.enum_catalogButton].fontWeight};
+	line-height: ${commonButtonFonts[ButtonEnum.enum_catalogButton].lineHeight};
 `;
 
-export const Button = styled.div<Button>``;
+export const Button = styled.div<ButtonStyleProps>``;

@@ -6,13 +6,17 @@ import { IButtonPropsDefault } from "./mock";
 import { ButtonType } from "./type";
 
 const Button: React.FC<ButtonType> = (props: ButtonType) => {
-	const { children, onClick, active, type, isLoading } = props;
+	const { children, onClick, active, type, padding, margin, width, isLoading } =
+		props;
 	if (isLoading) return <>Loading</>;
 	switch (type) {
 		case ButtonEnum.enum_primaryButton: {
 			return (
 				<ST.PrimaryButton
 					onClick={onClick}
+					padding={padding}
+					margin={margin}
+					width={width}
 					isLoading={isLoading}
 				>
 					{children}
@@ -23,6 +27,9 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 			return (
 				<ST.AccountButton
 					onClick={onClick}
+					padding={padding}
+					margin={margin}
+					width={width}
 					isLoading={isLoading}
 				>
 					{children}
@@ -33,6 +40,9 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 			return (
 				<ST.CatalogButton
 					onClick={onClick}
+					padding={padding}
+					margin={margin}
+					width={width}
 					isLoading={isLoading}
 					active={active}
 				>

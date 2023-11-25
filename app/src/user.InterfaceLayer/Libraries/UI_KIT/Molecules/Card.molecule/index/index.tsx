@@ -44,6 +44,7 @@ const Card = ({ name, image, price, handleAddToCart }: Props) => {
 					{price} ₽
 				</Text>
 				<Button
+					width="100%"
 					onClick={handleAddToCart}
 					type={ButtonEnum.enum_primaryButton}
 				>
