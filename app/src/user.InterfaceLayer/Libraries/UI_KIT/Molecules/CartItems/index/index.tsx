@@ -2,6 +2,9 @@ import React from "react";
 import { updateTotal } from "business.InterfaceLayer/store/shared/entities/todo.entity/redux/slice/CartSlice";
 import ImageAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Image.atom";
 import ImageEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Image.atom/enum";
+import TextAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
+import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 import * as ST from "../styled/styled";
 
@@ -36,8 +39,19 @@ const CartItems = ({
 				type={ImageEnum.enum_backgroundImage}
 			/>
 			<ST.list>
-				<ST.title>{name}</ST.title>
-				<ST.price>{totalPrice} ₽</ST.price>
+				<TextAtom
+					color={`${Colors.TEXT__PRIMARY}`}
+					type={TextEnum.enum_Text_H5}
+				>
+					{name}
+				</TextAtom>
+				<TextAtom
+					margin="10px 0 0 0"
+					color={`${Colors.CART__PRICE}`}
+					type={TextEnum.enum_Text_H4}
+				>
+					{totalPrice} ₽
+				</TextAtom>
 				<ST.count>
 					<ST.count__svg>
 						<svg
