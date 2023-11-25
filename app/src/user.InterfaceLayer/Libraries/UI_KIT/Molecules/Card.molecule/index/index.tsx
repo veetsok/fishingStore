@@ -29,22 +29,26 @@ const Card = ({ name, image, price, handleAddToCart }: Props) => {
 						alt={name}
 					/>
 				</ST.image>
-				<ST.title>
-					<Text type={TextEnum.enum_Text_H3}>{name}</Text>
-				</ST.title>
-				<ST.price>
-					<Text
-						color={`${Colors.CART__PRICE}`}
-						type={TextEnum.enum_Text_H4}
-					>
-						{price} ₽
-					</Text>
-				</ST.price>
-				<ST.btn onClick={handleAddToCart}>
-					<Button type={ButtonEnum.enum_primaryButton}>
-						{t("main.button")}
-					</Button>
-				</ST.btn>
+				<Text
+					color={`${Colors.TEXT__PRIMARY}`}
+					margin="10px 0 0 0"
+					type={TextEnum.enum_Text_H3}
+				>
+					{name}
+				</Text>
+				<Text
+					margin="10px 0"
+					color={`${Colors.CART__PRICE}`}
+					type={TextEnum.enum_Text_H4}
+				>
+					{price} ₽
+				</Text>
+				<Button
+					onClick={handleAddToCart}
+					type={ButtonEnum.enum_primaryButton}
+				>
+					{t("main.button")}
+				</Button>
 			</ST.block>
 		</ST.container>
 	);
