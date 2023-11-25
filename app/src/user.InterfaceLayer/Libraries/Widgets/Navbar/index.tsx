@@ -5,7 +5,7 @@ import Profile from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Profile.mole
 import { useTranslation } from "react-i18next";
 import i18n from "user.InterfaceLayer/Components/I18next/i18n";
 
-import * as ST from "../styled/styled";
+import * as ST from "./styled/styled";
 
 const Navbar: React.FC = () => {
 	const { t } = useTranslation();
