@@ -26,9 +26,10 @@ const Card = ({ name, image, price, handleAddToCart }: Props) => {
 		<ST.container>
 			<ST.block>
 				<Image
-					type={ImageEnum.enum_srcImage}
-					src={image}
-					alt={name}
+					width="370px"
+					height="300px"
+					background={image}
+					type={ImageEnum.enum_backgroundImage}
 				/>
 				<Text
 					color={`${Colors.TEXT__PRIMARY}`}
