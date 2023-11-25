@@ -2,13 +2,10 @@ import { ICommonComponentProps } from "user.InterfaceLayer/constants/commonCompo
 
 import TextEnum from "../enum";
 
-export interface TextType extends ICommonComponentProps {
+export interface TextType extends ICommonComponentProps, TextStyleProps {
 	type: TextEnum;
 	children?: ICommonComponentProps["children"];
 	isLoading?: ICommonComponentProps["isLoading"];
-	color?: ICommonComponentProps["color"];
-	margin?: ICommonComponentProps["margin"];
-	align?: ICommonComponentProps["align"];
 }
 export interface TextStyleProps {
 	isLoading?: ICommonComponentProps["isLoading"];

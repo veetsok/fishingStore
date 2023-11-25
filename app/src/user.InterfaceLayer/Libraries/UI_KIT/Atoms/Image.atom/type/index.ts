@@ -11,10 +11,10 @@ export interface ImageType extends ICommonComponentProps, ImageStyleProps {
 }
 
 export interface ImageStyleProps {
-	isLoading?: ImageType["isLoading"];
-	background?: ImageType["background"];
+	isLoading?: ICommonComponentProps["isLoading"];
+	background?: ICommonComponentProps["background"];
 	src?: ICommonComponentProps["src"];
-	borderRadius?: string;
-	height?: string;
-	width?: string;
+	borderRadius?: ICommonComponentProps["borderRadius"];
+	height?: ICommonComponentProps["height"];
+	width?: ICommonComponentProps["width"];
 }

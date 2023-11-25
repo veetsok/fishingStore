@@ -7,5 +7,5 @@ export const container = styled.div`
 `;
 
 export const block = styled.div`
-	width: 370px;
+	max-width: 370px;
 `;
