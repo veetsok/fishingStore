@@ -10,5 +10,5 @@ export const commonButtonStyles = css`
 	gap: 10px;
 	border-radius: 5px;
 	border: 1px solid ${Colors.TRANSPARENT};
-	font-family: ${FontsEnum.UnboundedRegular};
+	font-family: ${FontsEnum.Unbounded};
 `;

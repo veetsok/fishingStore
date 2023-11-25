@@ -1,12 +1,23 @@
 @font-face {
    font-family: 'Unbounded';
-   src: url('./fonts/Unbounded-Bold.woff2') format('woff2'),
-   url('./fonts/Unbounded-Bold.eot'),
-   url('./fonts/Unbounded-Bold.woff') format('woff'),
-   url('./fonts/Unbounded-Bold.ttf') format('truetype');
-   font-weight: 700;
+   src: url('./fonts/Unbounded-Light.woff2') format('woff2'),
+   url('./fonts/Unbounded-Light.eot'),
+   url('./fonts/Unbounded-Light.woff') format('woff'),
+   url('./fonts/Unbounded-Light.ttf') format('truetype');
+   font-weight: 300;
    font-style: normal;
    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./fonts/Unbounded-Regular.woff2') format('woff2'),
+  url('./fonts/Unbounded-Regular.eot'),
+  url('./fonts/Unbounded-Regular.woff') format('woff'),
+  url('./fonts/Unbounded-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,13 +30,80 @@
    font-style: normal;
    font-display: swap;
 }
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./fonts/Unbounded-Bold.woff2') format('woff2'),
+  url('./fonts/Unbounded-Bold.eot'),
+  url('./fonts/Unbounded-Bold.woff') format('woff'),
+  url('./fonts/Unbounded-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
    font-family: 'Unbounded';
-   src: url('./fonts/Unbounded-Regular.woff2') format('woff2'),
-   url('./fonts/Unbounded-Regular.eot'),
-   url('./fonts/Unbounded-Regular.woff') format('woff'),
-   url('./fonts/Unbounded-Regular.ttf') format('truetype');
+   src: url('./fonts/Unbounded-Black.woff2') format('woff2'),
+   url('./fonts/Unbounded-Black.eot'),
+   url('./fonts/Unbounded-Black.woff') format('woff'),
+   url('./fonts/Unbounded-Black.ttf') format('truetype');
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('./fonts/OpenSans-Light.woff2') format('woff2'),
+   url('./fonts/OpenSans-Light.eot'),
+   url('./fonts/OpenSans-Light.woff') format('woff'),
+   url('./fonts/OpenSans-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('./fonts/OpenSans-Regular.woff2') format('woff2'),
+   url('./fonts/OpenSans-Regular.eot'),
+   url('./fonts/OpenSans-Regular.woff') format('woff'),
+   url('./fonts/OpenSans-Regular.ttf') format('truetype');
    font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('./fonts/OpenSans-SemiBold.woff2') format('woff2'),
+   url('./fonts/OpenSans-SemiBold.eot'),
+   url('./fonts/OpenSans-SemiBold.woff') format('woff'),
+   url('./fonts/OpenSans-SemiBold.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('./fonts/OpenSans-Bold.woff2') format('woff2'),
+   url('./fonts/OpenSans-Bold.eot'),
+   url('./fonts/OpenSans-Bold.woff') format('woff'),
+   url('./fonts/OpenSans-Bold.ttf') format('truetype');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+   url('./fonts/OpenSans-ExtraBold.eot'),
+   url('./fonts/OpenSans-ExtraBold.woff') format('woff'),
+   url('./fonts/OpenSans-ExtraBold.ttf') format('truetype');
+   font-weight: 800;
    font-style: normal;
    font-display: swap;
 }
