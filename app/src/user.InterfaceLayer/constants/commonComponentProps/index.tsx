@@ -25,6 +25,8 @@ export enum CommonComponentsProps {
 	active = "active",
 	padding = "padding",
 	width = "width",
+	height = "height",
+	borderRadius = "borderRadius",
 }
 
 export interface ICommonComponentProps {
@@ -52,4 +54,6 @@ export interface ICommonComponentProps {
 	[CommonComponentsProps.padding]?: string;
 	[CommonComponentsProps.align]?: string;
 	[CommonComponentsProps.width]?: string;
+	[CommonComponentsProps.height]?: string;
+	[CommonComponentsProps.borderRadius]?: string;
 }

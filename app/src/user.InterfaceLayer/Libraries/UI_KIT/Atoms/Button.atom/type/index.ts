@@ -2,16 +2,12 @@ import { ICommonComponentProps } from "user.InterfaceLayer/constants/commonCompo
 
 import ButtonEnum from "../enum";
 
-export interface ButtonType extends ICommonComponentProps {
+export interface ButtonType extends ICommonComponentProps, ButtonStyleProps {
 	type: ButtonEnum;
 	children?: ICommonComponentProps["children"];
 	Icon?: ICommonComponentProps["icon"];
 	isLoading?: ICommonComponentProps["isLoading"];
 	onClick?: ICommonComponentProps["onClick"];
-	active?: ICommonComponentProps["active"];
-	padding?: ICommonComponentProps["padding"];
-	margin?: ICommonComponentProps["margin"];
-	width?: ICommonComponentProps["width"];
 }
 
 export interface ButtonStyleProps {
