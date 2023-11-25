@@ -1,5 +1,3 @@
-import styled from "styled-components";
+const test = {};
 
-export const profile = styled.svg`
-	margin-left: 20px;
-`;
+export default test;

@@ -17,6 +17,7 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 		background,
 		src,
 		alt,
+		fill,
 		onClick,
 	} = props;
 	if (isLoading) return <>Loading</>;
@@ -51,6 +52,10 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 		case ImageEnum.enum_defaultSvg: {
 			return (
 				<ST.DefaultSvg
+					fill={fill}
+					margin={margin}
+					width={width}
+					height={height}
 					onClick={onClick}
 					isLoading={isLoading}
 				>

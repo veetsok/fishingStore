@@ -18,4 +18,5 @@ export interface ImageStyleProps {
 	height?: ICommonComponentProps["height"];
 	width?: ICommonComponentProps["width"];
 	margin?: ICommonComponentProps["margin"];
+	fill?: ICommonComponentProps["margin"];
 }

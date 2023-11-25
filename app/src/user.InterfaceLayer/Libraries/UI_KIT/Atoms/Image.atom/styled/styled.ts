@@ -21,12 +21,11 @@ export const BackgroundImage = styled.div<ImageStyleProps>`
 export const NodeSvgImage = styled.div<ImageStyleProps>``;
 
 export const DefaultSvg = styled.div<ImageStyleProps>`
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+	${commonImageStyles};
 	& svg {
 		width: 100%;
 		height: 100%;
+		fill: ${(props) => props.fill};
 	}
 `;
 
