@@ -4,10 +4,14 @@ import { ImageStyleProps } from "../../type";
 
 export const commonImageStyles = css<ImageStyleProps>`
 	display: inline-flex;
+	align-content: center;
 	justify-content: center;
-	align-items: center;
+	background: ${(props) =>
+		props.background
+			? `#fff 50% / contain no-repeat url(${props.background})`
+			: "none"};
 	border-radius: ${(props) =>
 		props.borderRadius ? props.borderRadius : "10px"};
-	width: ${(props) => (props.height ? props.height : "100%")};
 	height: ${(props) => (props.height ? props.height : "auto")};
+	width: ${(props) => (props.width ? props.width : "100%")};
 `;

@@ -16,4 +16,5 @@ export interface ImageStyleProps {
 	src?: ICommonComponentProps["src"];
 	borderRadius?: string;
 	height?: string;
+	width?: string;
 }

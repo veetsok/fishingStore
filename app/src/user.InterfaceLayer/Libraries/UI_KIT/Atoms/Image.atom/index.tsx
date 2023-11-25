@@ -12,6 +12,7 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 		icon,
 		isLoading,
 		height,
+		width,
 		background,
 		src,
 		alt,
@@ -21,11 +22,26 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 	switch (type) {
 		case ImageEnum.enum_srcImage: {
 			return (
-				<ST.SrcImage
+				<ST.SrcImageBlock
+					width={width}
+					height={height}
+					background={background}
+				>
+					<ST.SrcImage
+						isLoading={isLoading}
+						src={src}
+						alt={alt}
+					/>
+				</ST.SrcImageBlock>
+			);
+		}
+		case ImageEnum.enum_backgroundImage: {
+			return (
+				<ST.BackgroundImage
+					width={width}
 					height={height}
 					isLoading={isLoading}
-					src={src}
-					alt={alt}
+					background={background}
 				/>
 			);
 		}
@@ -44,14 +60,6 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 				<ST.NodeSvgImage
 					isLoading={isLoading}
 					dangerouslySetInnerHTML={{ __html: children as string }}
-				/>
-			);
-		}
-		case ImageEnum.enum_backgroundImage: {
-			return (
-				<ST.BackgroundImage
-					isLoading={isLoading}
-					background={background}
 				/>
 			);
 		}
