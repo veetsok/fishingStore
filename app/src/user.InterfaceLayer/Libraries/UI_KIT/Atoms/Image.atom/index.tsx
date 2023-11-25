@@ -11,6 +11,7 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 		type,
 		icon,
 		isLoading,
+		margin,
 		height,
 		width,
 		background,
@@ -23,6 +24,7 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 		case ImageEnum.enum_srcImage: {
 			return (
 				<ST.SrcImageBlock
+					margin={margin}
 					width={width}
 					height={height}
 					background={background}
@@ -38,6 +40,7 @@ const Image: React.FC<ImageType> = (props: ImageType) => {
 		case ImageEnum.enum_backgroundImage: {
 			return (
 				<ST.BackgroundImage
+					margin={margin}
 					width={width}
 					height={height}
 					isLoading={isLoading}
