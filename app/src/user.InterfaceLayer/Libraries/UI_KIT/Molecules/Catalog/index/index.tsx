@@ -15,6 +15,8 @@ const Catalog: React.FC<CatalogProps> = ({
 				<Button
 					type={ButtonEnum.enum_catalogButton}
 					key={e.id}
+					margin="0 5px 0 0"
+					padding="15px 25px"
 					onClick={() => handleCategoryClick(e.title)}
 					active={selectedCategory === e.title}
 				>

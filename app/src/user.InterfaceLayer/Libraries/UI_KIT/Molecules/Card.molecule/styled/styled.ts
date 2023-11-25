@@ -8,7 +8,6 @@ export const container = styled.div`
 
 export const block = styled.div`
 	width: 370px;
-	height: 443px;
 `;
 
 export const image = styled.div`

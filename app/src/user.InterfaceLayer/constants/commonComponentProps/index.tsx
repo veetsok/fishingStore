@@ -22,6 +22,8 @@ export enum CommonComponentsProps {
 	margin = "margin",
 	align = "align",
 	active = "active",
+	padding = "padding",
+	width = "width",
 }
 
 export interface ICommonComponentProps {
@@ -45,5 +47,7 @@ export interface ICommonComponentProps {
 	[CommonComponentsProps.key]?: number;
 	[CommonComponentsProps.color]?: string;
 	[CommonComponentsProps.margin]?: string;
+	[CommonComponentsProps.padding]?: string;
 	[CommonComponentsProps.align]?: string;
+	[CommonComponentsProps.width]?: string;
 }

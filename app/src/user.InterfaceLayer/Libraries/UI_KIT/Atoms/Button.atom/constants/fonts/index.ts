@@ -9,6 +9,13 @@ const commonButtonFonts = {
 		lineHeight: "100%",
 		letterSpacing: "0.64px",
 	},
+	[ButtonEnum.enum_catalogButton]: {
+		fontFamily: "Unbounded",
+		fontSize: "16px",
+		fontStyle: "normal",
+		fontWeight: 500,
+		lineHeight: "150%",
+	},
 	[ButtonEnum.enum_accountButton]: {
 		fontFamily: "Unbounded",
 		fontSize: "12px",
