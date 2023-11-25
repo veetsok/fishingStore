@@ -2,17 +2,18 @@ import { ICommonComponentProps } from "user.InterfaceLayer/constants/commonCompo
 
 import ImageEnum from "../enum";
 
-export interface ImageType extends ICommonComponentProps {
+export interface ImageType extends ICommonComponentProps, ImageStyleProps {
 	type: ImageEnum;
+	isLoading?: ICommonComponentProps["isLoading"];
 	children?: ICommonComponentProps["children"];
 	icon?: ICommonComponentProps["icon"];
-	isLoading?: ICommonComponentProps["isLoading"];
-	background?: ICommonComponentProps["background"];
-	src?: ICommonComponentProps["src"];
 	onClick?: ICommonComponentProps["onClick"];
 }
 
-export interface ImageStyle {
+export interface ImageStyleProps {
 	isLoading?: ImageType["isLoading"];
 	background?: ImageType["background"];
+	src?: ICommonComponentProps["src"];
+	borderRadius?: string;
+	height?: string;
 }

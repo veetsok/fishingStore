@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
-import { ImageStyle } from "../type";
+import { ImageStyleProps } from "../type";
+import { commonImageStyles } from "../constants/commonButtonStyles";
 
-export const DefaultImage = styled.img<ImageStyle>`
-	width: 100%;
+export const SrcImage = styled.img<ImageStyleProps>`
+	${commonImageStyles}
 `;
 
-export const SvgImage = styled.div<ImageStyle>``;
+export const NodeSvgImage = styled.div<ImageStyleProps>``;
 
-export const DefaultSvg = styled.div<ImageStyle>`
+export const DefaultSvg = styled.div<ImageStyleProps>`
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -18,7 +19,7 @@ export const DefaultSvg = styled.div<ImageStyle>`
 	}
 `;
 
-export const BackgroundImage = styled.div<ImageStyle>`
+export const BackgroundImage = styled.div<ImageStyleProps>`
 	background: ${(props) =>
 		props.background
 			? `no-repeat center/100% url(${props.background})`
@@ -42,4 +43,4 @@ export const BackgroundImage = styled.div<ImageStyle>`
 	flex-direction: column;
 `;
 
-export const Image = styled.div<ImageStyle>``;
+export const Image = styled.div<ImageStyleProps>``;

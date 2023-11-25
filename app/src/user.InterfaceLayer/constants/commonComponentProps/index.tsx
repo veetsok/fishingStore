@@ -17,6 +17,7 @@ export enum CommonComponentsProps {
 	disabled = "disabled",
 	background = "background",
 	src = "src",
+	alt = "alt",
 	key = "key",
 	color = "color",
 	margin = "margin",
@@ -44,6 +45,7 @@ export interface ICommonComponentProps {
 	[CommonComponentsProps.active]?: boolean;
 	[CommonComponentsProps.background]?: string;
 	[CommonComponentsProps.src]?: string;
+	[CommonComponentsProps.alt]?: string;
 	[CommonComponentsProps.key]?: number;
 	[CommonComponentsProps.color]?: string;
 	[CommonComponentsProps.margin]?: string;

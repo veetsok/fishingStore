@@ -1,8 +1,8 @@
 import ImageEnum from "../enum";
 
 const ImagesMock = {
-  children: "Демо",
-  type: ImageEnum.enum_defaultImage,
+	children: "Демо",
+	type: ImageEnum.enum_srcImage,
 };
 
 export default ImagesMock;

@@ -5,6 +5,8 @@ import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/e
 import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
 import Colors from "user.InterfaceLayer/constants/colors";
+import Image from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Image.atom";
+import ImageEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Image.atom/enum";
 
 import * as ST from "../styled/styled";
 
@@ -23,12 +25,11 @@ const Card = ({ name, image, price, handleAddToCart }: Props) => {
 	return (
 		<ST.container>
 			<ST.block>
-				<ST.image>
-					<img
-						src={image}
-						alt={name}
-					/>
-				</ST.image>
+				<Image
+					type={ImageEnum.enum_srcImage}
+					src={image}
+					alt={name}
+				/>
 				<Text
 					color={`${Colors.TEXT__PRIMARY}`}
 					margin="10px 0 0 0"
