@@ -1,9 +1,9 @@
 import React from "react";
 import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
-import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 import ButtonAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
 import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 import Colors from "user.InterfaceLayer/constants/colors";
+import TextAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 
 import OrderBlock from "../../OrderBlock/index";
 import * as ST from "../styled/styled";
@@ -32,19 +32,21 @@ interface Props {
 const Orders: React.FC<Props> = ({ orders, handleClearOrder }) => {
 	return (
 		<>
-			<Text type={TextEnum.enum_Text_H2}>Мои заказы</Text>
+			<TextAtom type={TextEnum.enum_Text_H2}>Мои заказы</TextAtom>
 			{orders.map((order) => (
 				<ST.order key={order.id}>
 					<ST.title>
-						<ST.data>
-							Заказ <span>от {order.id}</span>
-						</ST.data>
-						<Text
+						<>
+							<TextAtom type={TextEnum.enum_Text_H6}>
+								Заказ <span>от {order.id}</span>
+							</TextAtom>
+						</>
+						<TextAtom
 							color={`${Colors.BLUE__PRIMARY}`}
 							type={TextEnum.enum_Text_H5}
 						>
 							{order.total} ₽
-						</Text>
+						</TextAtom>
 					</ST.title>
 					<>
 						{order.items.map((item) => (
@@ -68,10 +70,20 @@ const Orders: React.FC<Props> = ({ orders, handleClearOrder }) => {
 							Удалить заказ
 						</ButtonAtom>
 
-						<ST.subMethods>
-							<ST.div>Способ оплаты: {order.paymentMethod}</ST.div>
-							<ST.div>Способ доставки: {order.deliveryMethod}</ST.div>
-						</ST.subMethods>
+						<>
+							<TextAtom
+								type={TextEnum.enum_Text_H5}
+								color={`${Colors.CART__PRICE}`}
+							>
+								Способ оплаты: {order.paymentMethod}
+							</TextAtom>
+							<TextAtom
+								type={TextEnum.enum_Text_H5}
+								color={`${Colors.CART__PRICE}`}
+							>
+								Способ доставки: {order.deliveryMethod}
+							</TextAtom>
+						</>
 					</ST.sub>
 				</ST.order>
 			))}

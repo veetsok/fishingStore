@@ -40,9 +40,9 @@ const commonTextFonts = {
 	},
 	[TextEnum.enum_Text_H6]: {
 		fontFamily: `${FontsEnum.OpenSans}`,
-		fontSize: "16px",
+		fontSize: "18px",
 		fontStyle: "normal",
-		fontWeight: 400,
+		fontWeight: 500,
 		lineHeight: "120%",
 	},
 };
