@@ -4,7 +4,7 @@ import Colors from "user.InterfaceLayer/constants/colors";
 
 export const order = styled.div`
 	border-radius: 10px;
-	border: 2px solid ${Colors.TEXT__PRIMARY};
+	border: 2px solid ${Colors.BG_SECOND};
 	margin-bottom: 30px;
 `;
 export const title = styled.div`
@@ -13,7 +13,7 @@ export const title = styled.div`
 	align-items: center;
 	padding: 20px;
 	border-radius: 10px;
-	background: ${Colors.TEXT__PRIMARY};
+	background: ${Colors.BG_SECOND};
 	span {
 		color: ${Colors.BLUE__PRIMARY};
 	}
@@ -36,15 +36,6 @@ export const div = styled.div`
 	line-height: ${fonts.textOrder.lineHeight};
 `;
 
-export const total = styled.div`
-color: ${Colors.CART__PRICE}
-	font-family: ${fonts.textOrder.fontFamily};
-	font-size: ${fonts.textOrder.fontSize};
-	font-style: ${fonts.textOrder.fontStyle};
-	font-weight: ${fonts.textOrder.fontWeight};
-	line-height: ${fonts.textOrder.lineHeight};
-	`;
-
 export const block = styled.div`
 	flex-direction: column;
 	padding: 15px 20px;
@@ -52,12 +43,3 @@ export const block = styled.div`
 	justify-content: space-between;
 `;
 
-export const btn = styled.button`
-	display: inline-flex;
-	padding: 15px 20px;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	border-radius: 5px;
-	border: 1px solid ${Colors.INPUT};
-`;

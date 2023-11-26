@@ -31,6 +31,7 @@ export enum CommonComponentsProps {
 	position = "position",
 	top = "top",
 	bottom = "bottom",
+	border = "border",
 	right = "right",
 	left = "left",
 	borderRadius = "borderRadius",
@@ -64,6 +65,7 @@ export interface ICommonComponentProps {
 	[CommonComponentsProps.position]?: string;
 	[CommonComponentsProps.top]?: string;
 	[CommonComponentsProps.bottom]?: string;
+	[CommonComponentsProps.border]?: string;
 	[CommonComponentsProps.right]?: string;
 	[CommonComponentsProps.left]?: string;
 	[CommonComponentsProps.width]?: string;

@@ -22,9 +22,6 @@ export const PrimaryButton = styled.button<ButtonStyleProps>`
 
 export const AccountButton = styled.button<ButtonStyleProps>`
 	${commonButtonStyles};
-	border: 1px solid ${Colors.WHITE};
-	background: ${Colors.TRANSPARENT};
-	color: ${Colors.WHITE};
 	font-family: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontFamily};
 	font-size: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontSize};
 	font-style: ${commonButtonFonts[ButtonEnum.enum_accountButton].fontStyle};
