@@ -13,8 +13,8 @@ import {
 } from "business.InterfaceLayer/store/shared/entities/todo.entity/redux/slice/CartSlice";
 import CartTotal from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CartTotal/index";
 
-import * as ST from "../styled/styled";
-import { CartListkProps } from "../type";
+import * as ST from "./styled/styled";
+import { CartListkProps } from "./type";
 
 const CartList: React.FC<CartListkProps> = ({
 	paragragh,
@@ -90,7 +90,6 @@ const CartList: React.FC<CartListkProps> = ({
 					link="/check"
 					quantity={totalQuantity}
 					total={total}
-					type=""
 					textTitle={textTitle}
 					textButton={textButton}
 					textQuantity={textQuantity}

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
+import ButtonAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
+import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 
 import * as ST from "../styled/styled";
+
 interface CartTotalProps {
 	total: any;
-	type: any;
 	quantity: any;
 	link: any;
 	textButton: any;
@@ -16,7 +17,6 @@ interface CartTotalProps {
 
 const CartTotal: React.FC<CartTotalProps> = ({
 	total,
-	type,
 	quantity,
 	link,
 	textTitle,
@@ -37,7 +37,13 @@ const CartTotal: React.FC<CartTotalProps> = ({
 				</ST.quantity>
 			</ST.block>
 			<Link to={link}>
-				<Button type={type}>{textButton}</Button>
+				<ButtonAtom
+					width="100%"
+					margin="20px 0 0 0"
+					type={ButtonEnum.enum_primaryButton}
+				>
+					{textButton}
+				</ButtonAtom>
 			</Link>
 		</ST.total>
 	);
