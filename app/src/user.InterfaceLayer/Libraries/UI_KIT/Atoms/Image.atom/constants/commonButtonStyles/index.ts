@@ -14,5 +14,11 @@ export const commonImageStyles = css<ImageStyleProps>`
 		props.borderRadius ? props.borderRadius : "10px"};
 	margin: ${(props) => props.margin};
 	height: ${(props) => props.height};
-	width: ${(props) => (props.width ? props.width : "100%")};
+	width: ${(props) => (props.width ? props.width : "auto")};
+	cursor: ${(props) => props.cursor};
+	position: ${(props) => props.position};
+	top: ${(props) => props.top};
+	bottom: ${(props) => props.bottom};
+	right: ${(props) => props.right};
+	left: ${(props) => props.left};
 `;

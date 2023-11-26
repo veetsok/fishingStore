@@ -27,6 +27,12 @@ export enum CommonComponentsProps {
 	width = "width",
 	height = "height",
 	fill = "fill",
+	cursor = "cursor",
+	position = "position",
+	top = "top",
+	bottom = "bottom",
+	right = "right",
+	left = "left",
 	borderRadius = "borderRadius",
 }
 
@@ -54,6 +60,12 @@ export interface ICommonComponentProps {
 	[CommonComponentsProps.margin]?: string;
 	[CommonComponentsProps.padding]?: string;
 	[CommonComponentsProps.align]?: string;
+	[CommonComponentsProps.cursor]?: string;
+	[CommonComponentsProps.position]?: string;
+	[CommonComponentsProps.top]?: string;
+	[CommonComponentsProps.bottom]?: string;
+	[CommonComponentsProps.right]?: string;
+	[CommonComponentsProps.left]?: string;
 	[CommonComponentsProps.width]?: string;
 	[CommonComponentsProps.height]?: string;
 	[CommonComponentsProps.borderRadius]?: string;
