@@ -3,21 +3,18 @@ import React from "react";
 import * as ST from "./styled/styled";
 import ButtonEnum from "./enum";
 import { IButtonPropsDefault } from "./mock";
-import { ButtonType } from "./type";
+import { ButtonStyleProps, ButtonType } from "./type";
 
-const Button: React.FC<ButtonType> = (props: ButtonType) => {
-	const { children, onClick, active, type, padding, margin, width, isLoading } =
-		props;
+const Button: React.FC<ButtonType & ButtonStyleProps> = (props) => {
+	const { children, onClick, active, type, isLoading, ...otherProps } = props;
 	if (isLoading) return <>Loading</>;
 	switch (type) {
 		case ButtonEnum.enum_primaryButton: {
 			return (
 				<ST.PrimaryButton
 					onClick={onClick}
-					padding={padding}
-					margin={margin}
-					width={width}
 					isLoading={isLoading}
+					{...otherProps}
 				>
 					{children}
 				</ST.PrimaryButton>
@@ -27,10 +24,8 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 			return (
 				<ST.AccountButton
 					onClick={onClick}
-					padding={padding}
-					margin={margin}
-					width={width}
 					isLoading={isLoading}
+					{...otherProps}
 				>
 					{children}
 				</ST.AccountButton>
@@ -40,11 +35,9 @@ const Button: React.FC<ButtonType> = (props: ButtonType) => {
 			return (
 				<ST.CatalogButton
 					onClick={onClick}
-					padding={padding}
-					margin={margin}
-					width={width}
 					isLoading={isLoading}
 					active={active}
+					{...otherProps}
 				>
 					{children}
 				</ST.CatalogButton>

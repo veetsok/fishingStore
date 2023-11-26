@@ -3,18 +3,16 @@ import React from "react";
 import * as ST from "./styled/styled";
 import TextEnum from "./enum";
 import { ITextPropsDefault } from "./mock";
-import { TextType } from "./type";
+import { TextStyleProps, TextType } from "./type";
 
-const Text: React.FC<TextType> = (props: TextType) => {
-	const { children, type, isLoading, margin, align, color } = props;
+const Text: React.FC<TextType & TextStyleProps> = (props) => {
+	const { type, children, isLoading, ...otherProps } = props;
 	switch (type) {
 		case TextEnum.enum_Text_H1: {
 			return (
 				<ST.H1
 					isLoading={isLoading}
-					color={color}
-					margin={margin}
-					align={align}
+					{...otherProps}
 				>
 					{children}
 				</ST.H1>
@@ -23,10 +21,8 @@ const Text: React.FC<TextType> = (props: TextType) => {
 		case TextEnum.enum_Text_H2: {
 			return (
 				<ST.H2
-					color={color}
-					margin={margin}
-					align={align}
 					isLoading={isLoading}
+					{...otherProps}
 				>
 					{children}
 				</ST.H2>
@@ -35,10 +31,8 @@ const Text: React.FC<TextType> = (props: TextType) => {
 		case TextEnum.enum_Text_H3: {
 			return (
 				<ST.H3
-					color={color}
-					margin={margin}
-					align={align}
 					isLoading={isLoading}
+					{...otherProps}
 				>
 					{children}
 				</ST.H3>
@@ -47,10 +41,8 @@ const Text: React.FC<TextType> = (props: TextType) => {
 		case TextEnum.enum_Text_H4: {
 			return (
 				<ST.H4
-					color={color}
-					margin={margin}
-					align={align}
 					isLoading={isLoading}
+					{...otherProps}
 				>
 					{children}
 				</ST.H4>
@@ -59,10 +51,8 @@ const Text: React.FC<TextType> = (props: TextType) => {
 		case TextEnum.enum_Text_H5: {
 			return (
 				<ST.H5
-					color={color}
-					margin={margin}
-					align={align}
 					isLoading={isLoading}
+					{...otherProps}
 				>
 					{children}
 				</ST.H5>
@@ -71,10 +61,8 @@ const Text: React.FC<TextType> = (props: TextType) => {
 		case TextEnum.enum_Text_H6: {
 			return (
 				<ST.H6
-					color={color}
-					margin={margin}
-					align={align}
 					isLoading={isLoading}
+					{...otherProps}
 				>
 					{children}
 				</ST.H6>
