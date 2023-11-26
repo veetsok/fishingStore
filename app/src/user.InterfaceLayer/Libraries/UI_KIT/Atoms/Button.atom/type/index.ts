@@ -15,4 +15,7 @@ export interface ButtonStyleProps {
 	padding?: ICommonComponentProps["padding"];
 	margin?: ICommonComponentProps["margin"];
 	width?: ICommonComponentProps["width"];
+	border?: ICommonComponentProps["border"];
+	background?: ICommonComponentProps["background"];
+	color?: ICommonComponentProps["color"];
 }

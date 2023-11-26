@@ -1,6 +1,9 @@
 import React from "react";
 import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
 import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
+import ButtonAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
+import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 import OrderBlock from "../../OrderBlock/index";
 import * as ST from "../styled/styled";
@@ -36,9 +39,12 @@ const Orders: React.FC<Props> = ({ orders, handleClearOrder }) => {
 						<ST.data>
 							Заказ <span>от {order.id}</span>
 						</ST.data>
-						<ST.total>
-							<span>{order.total} ₽</span>
-						</ST.total>
+						<Text
+							color={`${Colors.BLUE__PRIMARY}`}
+							type={TextEnum.enum_Text_H5}
+						>
+							{order.total} ₽
+						</Text>
 					</ST.title>
 					<>
 						{order.items.map((item) => (
@@ -52,9 +58,16 @@ const Orders: React.FC<Props> = ({ orders, handleClearOrder }) => {
 						))}
 					</>
 					<ST.sub>
-						<ST.btn onClick={() => handleClearOrder(order.id)}>
+						<ButtonAtom
+							type={ButtonEnum.enum_accountButton}
+							onClick={() => handleClearOrder(order.id)}
+							padding="15px 20px"
+							border={`1px solid ${Colors.INPUT}`}
+							color={`${Colors.INPUT}`}
+						>
 							Удалить заказ
-						</ST.btn>
+						</ButtonAtom>
+
 						<ST.subMethods>
 							<ST.div>Способ оплаты: {order.paymentMethod}</ST.div>
 							<ST.div>Способ доставки: {order.deliveryMethod}</ST.div>
