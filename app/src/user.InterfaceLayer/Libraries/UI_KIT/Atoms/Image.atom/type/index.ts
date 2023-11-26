@@ -8,12 +8,13 @@ export interface ImageType extends ICommonComponentProps, ImageStyleProps {
 	children?: ICommonComponentProps["children"];
 	icon?: ICommonComponentProps["icon"];
 	onClick?: ICommonComponentProps["onClick"];
+	src?: ICommonComponentProps["src"];
+	alt?: ICommonComponentProps["alt"];
 }
 
 export interface ImageStyleProps {
 	isLoading?: ICommonComponentProps["isLoading"];
 	background?: ICommonComponentProps["background"];
-	src?: ICommonComponentProps["src"];
 	borderRadius?: ICommonComponentProps["borderRadius"];
 	height?: ICommonComponentProps["height"];
 	width?: ICommonComponentProps["width"];
