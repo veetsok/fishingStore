@@ -7,8 +7,10 @@ export enum CommonComponentsProps {
 	icon = "icon",
 	children = "children",
 	className = "className",
+	checked = "checked",
 	maxLength = "maxLength",
 	max = "max",
+	name = "name",
 	isError = "isError",
 	isLoading = "isLoading",
 	onChange = "onChange",
@@ -48,6 +50,7 @@ export interface ICommonComponentProps {
 	[CommonComponentsProps.max]?: number;
 	[CommonComponentsProps.isError]?: boolean;
 	[CommonComponentsProps.isLoading]?: boolean;
+	[CommonComponentsProps.checked]?: boolean;
 	[CommonComponentsProps.onChange]?: () => void;
 	[CommonComponentsProps.autoFocus]?: boolean;
 	[CommonComponentsProps.required]?: boolean;
@@ -72,4 +75,5 @@ export interface ICommonComponentProps {
 	[CommonComponentsProps.height]?: string;
 	[CommonComponentsProps.borderRadius]?: string;
 	[CommonComponentsProps.fill]?: string;
+	[CommonComponentsProps.name]?: string;
 }
