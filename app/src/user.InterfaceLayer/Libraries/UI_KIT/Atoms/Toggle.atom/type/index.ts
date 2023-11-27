@@ -13,6 +13,7 @@ export interface ToggleProps {
 
 export interface ToggleStyleProps {
 	margin?: ICommonComponentProps["margin"];
+	padding?: ICommonComponentProps["padding"];
 	width?: ICommonComponentProps["width"];
 	height?: ICommonComponentProps["height"];
 	border?: ICommonComponentProps["border"];
