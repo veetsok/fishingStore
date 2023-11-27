@@ -58,7 +58,7 @@ const CheckOutComponent: React.FC = () => {
 			selectedDelivery={selectedDelivery}
 			handleSelectPayment={handleSelectPayment}
 			handleSelectDelivery={handleSelectDelivery}
-			handleCheckout={handleCheckout}
+			onClick={handleCheckout}
 			delivery={delivery}
 			payment={payment}
 			textPaymentTitle={t("checkMethod.paymentTitle")}

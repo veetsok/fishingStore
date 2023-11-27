@@ -1,7 +1,9 @@
+import { ICommonComponentProps } from "user.InterfaceLayer/constants/commonComponentProps";
+
 export interface CheckOutWidgetProps {
 	delivery: any;
 	payment: any;
-	handleCheckout: any;
+	onClick: ICommonComponentProps["onClick"];
 	selectedPayment: any;
 	selectedDelivery: any;
 	handleSelectPayment: any;

@@ -6,29 +6,21 @@ import TextAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
 import Colors from "user.InterfaceLayer/constants/colors";
 
-import * as ST from "../styled/styled";
-interface CheckTotalProps {
-	total: any;
-	type: any;
-	quantity: any;
-	link: any;
-	textButton: any;
-	textTitle: any;
-	textQuantity: any;
-	textTotal: any;
-	handleCheckout: any;
-}
+import { CheckTotalProps } from "./type";
+import * as ST from "./styled/styled";
 
-const CheckTotal: React.FC<CheckTotalProps> = ({
-	total,
-	quantity,
-	link,
-	textTitle,
-	textButton,
-	textQuantity,
-	textTotal,
-	handleCheckout,
-}: CheckTotalProps) => {
+const CheckTotal: React.FC<CheckTotalProps> = (props: CheckTotalProps) => {
+	const {
+		total,
+		quantity,
+		link,
+		textTitle,
+		textButton,
+		textQuantity,
+		textTotal,
+		onClick,
+	} = props;
+
 	return (
 		<ST.total>
 			<ST.totalBlock>
@@ -62,7 +54,7 @@ const CheckTotal: React.FC<CheckTotalProps> = ({
 				</ST.block>
 			</ST.totalBlock>
 			<Link
-				onClick={handleCheckout}
+				onClick={onClick}
 				to={link}
 			>
 				<Button

@@ -2,30 +2,22 @@ import React from "react";
 import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
 
-import * as ST from "../styled/styled";
-import PayBlock from "../../PayBlock";
+import * as ST from "./styled/styled";
+import PayBlock from "../PayBlock";
+import { CheckMethodProps } from "./type";
 
-interface CheckMethodProps {
-	selectedPayment: any;
-	selectedDelivery: any;
-	payment: any;
-	delivery: any;
-	handleSelectPayment: any;
-	handleSelectDelivery: any;
-	textPaymentTitle: any;
-	textDeliveryTitle: any;
-}
+const CheckMethod: React.FC<CheckMethodProps> = (props: CheckMethodProps) => {
+	const {
+		payment,
+		delivery,
+		selectedPayment,
+		selectedDelivery,
+		handleSelectPayment,
+		handleSelectDelivery,
+		textPaymentTitle,
+		textDeliveryTitle,
+	} = props;
 
-const CheckMethod: React.FC<CheckMethodProps> = ({
-	payment,
-	delivery,
-	selectedPayment,
-	selectedDelivery,
-	handleSelectPayment,
-	handleSelectDelivery,
-	textPaymentTitle,
-	textDeliveryTitle,
-}: CheckMethodProps) => {
 	return (
 		<ST.container>
 			<Text type={TextEnum.enum_Text_H2}>{textPaymentTitle}</Text>
