@@ -7,6 +7,6 @@ export const footer = styled.div`
 	}
 	display: flex;
 	justify-content: space-between;
-	padding: 67px 0 88px 0;
+	padding: 60px 0 80px 0;
 	align-items: center;
 `;
