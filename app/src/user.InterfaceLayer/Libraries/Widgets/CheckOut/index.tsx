@@ -16,7 +16,7 @@ const CheckOutWidget: React.FC<CheckOutWidgetProps> = ({
 	selectedDelivery,
 	handleSelectPayment,
 	handleSelectDelivery,
-	handleCheckout,
+	onClick,
 	textTitle,
 	textButton,
 	textQuantity,
@@ -52,14 +52,13 @@ const CheckOutWidget: React.FC<CheckOutWidgetProps> = ({
 				/>
 				<CheckTotal
 					link="/account"
-					type=""
 					total={total}
 					quantity={quantity}
 					textTitle={textTitle}
 					textButton={textButton}
 					textQuantity={textQuantity}
 					textTotal={textTotal}
-					handleCheckout={handleCheckout}
+					onClick={onClick}
 				/>
 			</ST.block>
 		</ST.container>
