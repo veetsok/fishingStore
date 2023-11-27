@@ -38,7 +38,7 @@ const CheckMethod: React.FC<CheckMethodProps> = ({
 						name={pay.name}
 						value={pay.type}
 						checked={selectedPayment === pay.type}
-						onChange={(e: any) => handleSelectPayment(e.target.value)}
+						onChange={() => handleSelectPayment(pay.type)}
 					/>
 				))}
 			</ST.text>
@@ -55,7 +55,7 @@ const CheckMethod: React.FC<CheckMethodProps> = ({
 								name={del.name}
 								value={del.type}
 								checked={selectedDelivery === del.type}
-								onChange={(e: any) => handleSelectDelivery(e.target.value)}
+								onChange={() => handleSelectDelivery(del.type)}
 							/>
 						))}
 					</ST.delivery_block>
