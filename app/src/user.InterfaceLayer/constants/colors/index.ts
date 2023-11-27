@@ -9,6 +9,7 @@ enum Colors {
 	CART__PRICE = "#2f353d",
 	INPUT = "#445f91",
 	BG_SECOND = "#F0F2F6",
+	GRAY = "#d0d0d0",
 }
 
 export default Colors;

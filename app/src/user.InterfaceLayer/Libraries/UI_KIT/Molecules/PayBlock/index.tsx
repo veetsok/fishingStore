@@ -1,9 +1,11 @@
 import React from "react";
 import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
+import Colors from "user.InterfaceLayer/constants/colors";
 
 import * as ST from "./styled";
-import InputMethod from "../../Atoms/InputMethod/index";
 import TextEnum from "../../Atoms/Text.atom/enum";
+import Toggle from "../../Atoms/Toggle.atom";
+import ToggleTypeEnum from "../../Atoms/Toggle.atom/enum";
 
 interface PayBlockProps {
 	name: string;
@@ -20,12 +22,20 @@ const PayBlock: React.FC<PayBlockProps> = ({
 }: PayBlockProps) => {
 	return (
 		<ST.text>
-			<InputMethod
+			<Toggle
+				width="20px"
+				height="20px"
+				border={`2px solid ${Colors.GRAY}`}
+				borderRadio={`2px solid ${Colors.BLUE__PRIMARY}`}
+				color={`${Colors.BLUE__PRIMARY}`}
+				margin="0 10px 0 0"
+				type={ToggleTypeEnum.RADIO}
 				onChange={onChange}
 				name={name}
 				value={value}
 				checked={checked}
 			/>
+
 			<Text type={TextEnum.enum_Text_H5}>{name}</Text>
 		</ST.text>
 	);

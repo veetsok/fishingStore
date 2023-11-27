@@ -1,4 +1,4 @@
-export enum ChecboxTypeEnum {
+enum ToggleTypeEnum {
 	CHECKBOX = "checkbox",
 	RADIO = "radio",
 	FILE = "file",
@@ -6,3 +6,5 @@ export enum ChecboxTypeEnum {
 	DATETIME_LOCAL = "datetime-local",
 	DATE = "date",
 }
+
+export default ToggleTypeEnum;
