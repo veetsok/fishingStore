@@ -8,21 +8,12 @@ export const Checkbox = styled.input``;
 export const Radio = styled.input<ToggleStyleProps>`
 	${commonToggleStyles};
 	appearance: none;
-	position: relative;
 	border-radius: 50%;
-	transition: all 0.3s ease-in-out;
+	background-clip: content-box;
 	&:focus {
 		border: ${(props) => props.borderRadio};
 	}
-	&:checked::before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 70%;
-		height: 70%;
-		border-radius: 50%;
+	&:checked {
 		background-color: ${(props) => props.color};
 	}
 `;

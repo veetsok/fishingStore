@@ -25,6 +25,7 @@ const PayBlock: React.FC<PayBlockProps> = ({
 			<Toggle
 				width="24px"
 				height="24px"
+				padding="3px"
 				border={`2px solid ${Colors.GRAY}`}
 				borderRadio={`2px solid ${Colors.BLUE__PRIMARY}`}
 				color={`${Colors.BLUE__PRIMARY}`}
