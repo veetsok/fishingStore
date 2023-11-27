@@ -28,9 +28,7 @@ const CheckMethod: React.FC<CheckMethodProps> = ({
 }: CheckMethodProps) => {
 	return (
 		<ST.container>
-			<ST.subtitle>
-				<Text type={TextEnum.enum_Text_H2}>{textPaymentTitle}</Text>
-			</ST.subtitle>
+			<Text type={TextEnum.enum_Text_H2}>{textPaymentTitle}</Text>
 			<ST.text>
 				{payment.map((pay: any) => (
 					<PayBlock
@@ -44,9 +42,7 @@ const CheckMethod: React.FC<CheckMethodProps> = ({
 			</ST.text>
 
 			<ST.delivery>
-				<ST.subtitle>
-					<Text type={TextEnum.enum_Text_H2}>{textDeliveryTitle}</Text>
-				</ST.subtitle>
+				<Text type={TextEnum.enum_Text_H2}>{textDeliveryTitle}</Text>
 				<ST.text>
 					<ST.delivery_block>
 						{delivery.map((del: any) => (

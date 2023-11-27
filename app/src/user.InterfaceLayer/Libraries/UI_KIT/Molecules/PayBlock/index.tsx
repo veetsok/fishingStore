@@ -20,14 +20,18 @@ const PayBlock: React.FC<PayBlockProps> = (props: PayBlockProps) => {
 				border={`2px solid ${Colors.GRAY}`}
 				borderRadio={`2px solid ${Colors.BLUE__PRIMARY}`}
 				color={`${Colors.BLUE__PRIMARY}`}
-				margin="0 10px 0 0"
 				type={ToggleTypeEnum.RADIO}
 				onChange={onChange}
 				name={name}
 				value={value}
 				checked={checked}
 			/>
-			<Text type={TextEnum.enum_Text_H5}>{name}</Text>
+			<Text
+				margin="0 0 0 10px"
+				type={TextEnum.enum_Text_H5}
+			>
+				{name}
+			</Text>
 		</ST.text>
 	);
 };
