@@ -20,8 +20,8 @@ export const Radio = styled.input<ToggleStyleProps>`
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 60%;
-		height: 60%;
+		width: 70%;
+		height: 70%;
 		border-radius: 50%;
 		background-color: ${(props) => props.color};
 	}
