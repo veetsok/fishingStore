@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAppSelector } from "business.InterfaceLayer/store/services/hooks/redux";
 
-import Orders from "../const";
+import Orders from "./const";
 
 const OrderHistory: React.FC = () => {
 	const initialOrders = useAppSelector((state: any) => state.cart.orders);

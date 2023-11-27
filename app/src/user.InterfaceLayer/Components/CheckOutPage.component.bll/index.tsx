@@ -53,23 +53,21 @@ const CheckOutComponent: React.FC = () => {
 	const { t } = useTranslation();
 
 	return (
-		<>
-			<CheckOutWidget
-				selectedPayment={selectedPayment}
-				selectedDelivery={selectedDelivery}
-				handleSelectPayment={handleSelectPayment}
-				handleSelectDelivery={handleSelectDelivery}
-				handleCheckout={handleCheckout}
-				delivery={delivery}
-				payment={payment}
-				textPaymentTitle={t("checkMethod.paymentTitle")}
-				textDeliveryTitle={t("checkMethod.deliveryTitle")}
-				textTitle={t("cart.cartTotal.title")}
-				textButton={t("cart.cartTotal.button")}
-				textQuantity={t("cart.cartTotal.quantity")}
-				textTotal={t("cart.cartTotal.total")}
-			/>
-		</>
+		<CheckOutWidget
+			selectedPayment={selectedPayment}
+			selectedDelivery={selectedDelivery}
+			handleSelectPayment={handleSelectPayment}
+			handleSelectDelivery={handleSelectDelivery}
+			handleCheckout={handleCheckout}
+			delivery={delivery}
+			payment={payment}
+			textPaymentTitle={t("checkMethod.paymentTitle")}
+			textDeliveryTitle={t("checkMethod.deliveryTitle")}
+			textTitle={t("cart.cartTotal.title")}
+			textButton={t("cart.cartTotal.button")}
+			textQuantity={t("cart.cartTotal.quantity")}
+			textTotal={t("cart.cartTotal.total")}
+		/>
 	);
 };
 
