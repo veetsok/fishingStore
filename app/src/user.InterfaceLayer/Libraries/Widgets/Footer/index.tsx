@@ -6,7 +6,7 @@ import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
 import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 import Colors from "user.InterfaceLayer/constants/colors";
 
-import * as ST from "../styled/styled";
+import * as ST from "./styled/styled";
 
 const Footer = () => {
 	const { t } = useTranslation();
