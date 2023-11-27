@@ -17,7 +17,6 @@ import * as ST from "./styled/styled";
 import { CartListkProps } from "./type";
 
 const CartList: React.FC<CartListkProps> = ({
-	paragragh,
 	span,
 	textTitle,
 	textButton,
@@ -62,7 +61,6 @@ const CartList: React.FC<CartListkProps> = ({
 					{items.length === 0 ? (
 						<EmptyCart
 							link="/"
-							paragragh={paragragh}
 							span={span}
 						/>
 					) : (

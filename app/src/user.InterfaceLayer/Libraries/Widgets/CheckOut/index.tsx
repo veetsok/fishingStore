@@ -6,8 +6,8 @@ import { useAppSelector } from "business.InterfaceLayer/store/services/hooks/red
 import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
 
-import * as ST from "../styled/styled";
-import { CheckOutWidgetProps } from "../type";
+import * as ST from "./styled/styled";
+import { CheckOutWidgetProps } from "./type";
 
 const CheckOutWidget: React.FC<CheckOutWidgetProps> = ({
 	delivery,
@@ -27,29 +27,31 @@ const CheckOutWidget: React.FC<CheckOutWidgetProps> = ({
 	const { total, quantity } = useAppSelector((state: any) => state.cart);
 
 	return (
-		<>
+		<ST.container>
 			<EmptyCart
 				link="/ivanKosteev/fishing/cart"
-				paragragh=""
 				span="Вернуться к корзине"
 			/>
-			<Text type={TextEnum.enum_Text_H1}>Оформление заказа</Text>
+			<Text
+				margin="20px 0 40px 0"
+				type={TextEnum.enum_Text_H1}
+			>
+				Оформление заказа
+			</Text>
 
-			<ST.container>
-				<ST.block>
-					<CheckMethod
-						textPaymentTitle={textPaymentTitle}
-						textDeliveryTitle={textDeliveryTitle}
-						selectedPayment={selectedPayment}
-						selectedDelivery={selectedDelivery}
-						handleSelectPayment={handleSelectPayment}
-						handleSelectDelivery={handleSelectDelivery}
-						delivery={delivery}
-						payment={payment}
-					/>
-				</ST.block>
+			<ST.block>
+				<CheckMethod
+					textPaymentTitle={textPaymentTitle}
+					textDeliveryTitle={textDeliveryTitle}
+					selectedPayment={selectedPayment}
+					selectedDelivery={selectedDelivery}
+					handleSelectPayment={handleSelectPayment}
+					handleSelectDelivery={handleSelectDelivery}
+					delivery={delivery}
+					payment={payment}
+				/>
 				<CheckTotal
-					link="/ivanKosteev/fishing/account"
+					link="/account"
 					type=""
 					total={total}
 					quantity={quantity}
@@ -59,8 +61,8 @@ const CheckOutWidget: React.FC<CheckOutWidgetProps> = ({
 					textTotal={textTotal}
 					handleCheckout={handleCheckout}
 				/>
-			</ST.container>
-		</>
+			</ST.block>
+		</ST.container>
 	);
 };
 
