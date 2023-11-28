@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ButtonAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
 import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 
-import * as ST from "../styled/styled";
+import * as ST from "./styled/styled";
 
 interface CartTotalProps {
 	total: any;

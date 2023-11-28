@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Form from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/FormAccount/index";
 import Orders from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Orders/index";
 
-import Catalog from "../../../UI_KIT/Molecules/Catalog/index";
+import Catalog from "../../../UI_KIT/Molecules/Catalog.molecule/index";
 import { UserData, orderData } from "../const/index";
 import * as ST from "../styled/styled";
 

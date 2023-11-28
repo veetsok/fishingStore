@@ -1,5 +1,5 @@
 import React from "react";
-import Catalog from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Catalog/index";
+import Catalog from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Catalog.molecule/index";
 
 import * as ST from "../styled/styled";
 import { CardListTestProps } from "../type";

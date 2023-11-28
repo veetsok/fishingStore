@@ -2,7 +2,7 @@ import React from "react";
 import ButtonAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
 import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 
-import { CatalogProps } from "../type";
+import { CatalogProps } from "./type";
 
 const Catalog: React.FC<CatalogProps> = ({
 	handleCategoryClick,
