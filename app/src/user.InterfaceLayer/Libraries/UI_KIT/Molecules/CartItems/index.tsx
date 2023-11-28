@@ -9,7 +9,7 @@ import { ReactComponent as Minus } from "user.InterfaceLayer/Libraries/assets/ic
 import { ReactComponent as Plus } from "user.InterfaceLayer/Libraries/assets/icons/Plus.svg";
 import { ReactComponent as Remove } from "user.InterfaceLayer/Libraries/assets/icons/Remove.svg";
 
-import * as ST from "../styled/styled";
+import * as ST from "./styled/styled";
 
 type Props = {
 	id: number;
