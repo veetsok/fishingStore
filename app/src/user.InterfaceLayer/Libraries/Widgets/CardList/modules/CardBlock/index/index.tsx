@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Card.molecule/index";
+import Card from "user.InterfaceLayer/Libraries/UI_KIT/Cells/Card.cell/index";
 
 import { CardBlockProps } from "../type";
 
@@ -23,7 +23,7 @@ const CardBlock: React.FC<CardBlockProps> = ({
 							name={product.name}
 							image={product.image}
 							price={product.price}
-							handleAddToCart={() => handleAddToCart(product)}
+							onClick={() => handleAddToCart(product)}
 						/>
 					))}
 				</>
