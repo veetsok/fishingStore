@@ -9,7 +9,12 @@ const AccountComponent: React.FC = () => {
 
 	return (
 		<>
-			<Text type={TextEnum.enum_Text_H1}>{t("account.title")}</Text>
+			<Text
+				margin="40px 0 40px 0"
+				type={TextEnum.enum_Text_H1}
+			>
+				{t("account.title")}
+			</Text>
 			<AccountBlock />
 		</>
 	);

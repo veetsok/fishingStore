@@ -7,6 +7,7 @@ export const container = styled.div`
 	align-items: flex-start;
 	display: flex;
 	transition: all 0.3s ease-in-out;
+	padding-bottom: 60px;
 `;
 export const title = styled.h3`
 	color:${Colors.TEXT__PRIMARY}
