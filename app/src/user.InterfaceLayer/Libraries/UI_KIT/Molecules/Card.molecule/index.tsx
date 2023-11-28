@@ -8,7 +8,7 @@ import Colors from "user.InterfaceLayer/constants/colors";
 import Image from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Image.atom";
 import ImageEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Image.atom/enum";
 
-import * as ST from "../styled/styled";
+import * as ST from "./styled/styled";
 
 type Props = {
 	// id: number;
