@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Logo.molecule/Logo";
 import Category from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Category.molecule/Category";
-import Profile from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Profile.molecule/Profile";
+import Profile from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Profile.molecule";
 import { useTranslation } from "react-i18next";
 import i18n from "user.InterfaceLayer/Components/I18next/i18n";
 import ButtonAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";

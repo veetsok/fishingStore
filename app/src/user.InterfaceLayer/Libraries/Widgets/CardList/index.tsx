@@ -1,9 +1,9 @@
 import React from "react";
 import Catalog from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Catalog.molecule/index";
 
-import * as ST from "../styled/styled";
-import { CardListTestProps } from "../type";
-import CardBlock from "../modules/CardBlock/index";
+import * as ST from "./styled/styled";
+import { CardListTestProps } from "./type";
+import CardBlock from "./modules/CardBlock/index/index";
 
 const CardList: React.FC<CardListTestProps> = React.memo(
 	({

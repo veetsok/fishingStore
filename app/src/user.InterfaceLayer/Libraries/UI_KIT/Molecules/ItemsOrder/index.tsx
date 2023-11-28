@@ -1,16 +1,22 @@
 import React from "react";
 
-import * as ST from "../styled/styled";
+import * as ST from "./styled/styled";
 
-type Props = {
+interface ItemsOrderProps {
 	name: any;
 	image: any;
 	price: any;
 	data: any;
 	quantity: any;
-};
+}
 
-const ItemsOrder = ({ name, image, price, data, quantity }: Props) => {
+const ItemsOrder: React.FC<ItemsOrderProps> = ({
+	name,
+	image,
+	price,
+	data,
+	quantity,
+}) => {
 	return (
 		<>
 			<ST.orders>
