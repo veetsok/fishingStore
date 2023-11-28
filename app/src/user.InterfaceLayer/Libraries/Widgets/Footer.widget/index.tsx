@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Logo.molecule/Logo";
 import { useTranslation } from "react-i18next";
 import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
@@ -13,7 +14,10 @@ const Footer = () => {
 
 	return (
 		<ST.footer>
-			<Logo desciption={t("navbar.logo")} />
+			<Logo
+				desciption={t("navbar.logo")}
+				color={`${Colors.WHITE}`}
+			/>
 			<Category
 				text={
 					t("navbar.NavbarText", { returnObjects: true }) as {
@@ -22,13 +26,15 @@ const Footer = () => {
 					}[]
 				}
 			/>
-			<Button
-				color={`${Colors.WHITE}`}
-				border={`1px solid ${Colors.WHITE}`}
-				type={ButtonEnum.enum_accountButton}
-			>
-				{t("footer.lk")}
-			</Button>
+			<Link to="/account">
+				<Button
+					color={`${Colors.WHITE}`}
+					border={`1px solid ${Colors.WHITE}`}
+					type={ButtonEnum.enum_accountButton}
+				>
+					{t("footer.lk")}
+				</Button>
+			</Link>
 		</ST.footer>
 	);
 };
