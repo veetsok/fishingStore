@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Logo/index/Logo";
-import Category from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Category.molecule/index/Category";
+import Logo from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Logo.molecule/Logo";
 import { useTranslation } from "react-i18next";
 import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
 import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 import Colors from "user.InterfaceLayer/constants/colors";
+import Category from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Category.molecule/Category";
 
 import * as ST from "./styled/styled";
 
@@ -14,7 +14,14 @@ const Footer = () => {
 	return (
 		<ST.footer>
 			<Logo desciption={t("navbar.logo")} />
-			<Category text={t("navbar.NavbarText", { returnObjects: true })} />
+			<Category
+				text={
+					t("navbar.NavbarText", { returnObjects: true }) as {
+						id: number;
+						title: string;
+					}[]
+				}
+			/>
 			<Button
 				color={`${Colors.WHITE}`}
 				border={`1px solid ${Colors.WHITE}`}
