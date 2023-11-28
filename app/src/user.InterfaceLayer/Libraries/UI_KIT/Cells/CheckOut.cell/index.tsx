@@ -4,7 +4,7 @@ import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum"
 
 import * as ST from "./styled/styled";
 import { CheckMethodProps } from "./type";
-import PayBlock from "../../Molecules/PayBlock";
+import PayBlock from "../../Molecules/PayBlock.molecule";
 
 const CheckMethod: React.FC<CheckMethodProps> = (props: CheckMethodProps) => {
 	const {

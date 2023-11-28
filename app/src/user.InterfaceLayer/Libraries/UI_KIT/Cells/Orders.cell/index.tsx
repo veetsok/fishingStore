@@ -5,7 +5,7 @@ import Colors from "user.InterfaceLayer/constants/colors";
 import TextAtom from "../../Atoms/Text.atom";
 import TextEnum from "../../Atoms/Text.atom/enum";
 import * as ST from "./styled/styled";
-import OrderBlock from "../../Molecules/OrderBlock";
+import OrderBlock from "../../Molecules/OrderBlock.molecule";
 import ButtonAtom from "../../Atoms/Button.atom";
 import ButtonEnum from "../../Atoms/Button.atom/enum";
 import { order } from "./type";

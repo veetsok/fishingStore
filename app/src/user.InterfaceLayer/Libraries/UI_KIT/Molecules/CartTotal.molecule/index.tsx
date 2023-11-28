@@ -4,16 +4,7 @@ import ButtonAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
 import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 
 import * as ST from "./styled/styled";
-
-interface CartTotalProps {
-	total: any;
-	quantity: any;
-	link: any;
-	textButton: any;
-	textTitle: any;
-	textQuantity: any;
-	textTotal: any;
-}
+import { CartTotalProps } from "./type";
 
 const CartTotal: React.FC<CartTotalProps> = ({
 	total,

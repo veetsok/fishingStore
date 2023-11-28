@@ -1,6 +1,6 @@
 import React from "react";
-import EmptyCart from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/EmpryCart/index";
-import CartItems from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CartItems/index";
+import EmptyCart from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/EmpryCart.molecule/index";
+import CartItems from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CartItems.molecule/index";
 import {
 	useAppDispatch,
 	useAppSelector,
@@ -11,7 +11,7 @@ import {
 	updateQuantity,
 	updateTotal,
 } from "business.InterfaceLayer/store/shared/entities/todo.entity/redux/slice/CartSlice";
-import CartTotal from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CartTotal/index";
+import CartTotal from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CartTotal.molecule/index";
 
 import * as ST from "./styled/styled";
 import { CartListkProps } from "./type";

@@ -1,7 +1,7 @@
 import React from "react";
 import CheckMethod from "user.InterfaceLayer/Libraries/UI_KIT/Cells/CheckOut.cell/index";
-import EmptyCart from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/EmpryCart/index";
-import CheckTotal from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CheckTotal/index";
+import EmptyCart from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/EmpryCart.molecule/index";
+import CheckTotal from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CheckTotal.molecule/index";
 import { useAppSelector } from "business.InterfaceLayer/store/services/hooks/redux";
 import Text from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
 import TextEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom/enum";
