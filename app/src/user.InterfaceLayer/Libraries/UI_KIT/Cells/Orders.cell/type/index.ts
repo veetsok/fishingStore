@@ -13,8 +13,3 @@ export interface CartItem {
 	price: number;
 	image: string;
 }
-
-export interface OrdersProps {
-	orders: order[];
-	handleClearOrder: any;
-}
