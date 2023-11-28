@@ -1,5 +1,5 @@
 import React from "react";
-import CheckMethod from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CheckOut.molecule/index";
+import CheckMethod from "user.InterfaceLayer/Libraries/UI_KIT/Cells/CheckOut.cell/index";
 import EmptyCart from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/EmpryCart/index";
 import CheckTotal from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/CheckTotal/index";
 import { useAppSelector } from "business.InterfaceLayer/store/services/hooks/redux";

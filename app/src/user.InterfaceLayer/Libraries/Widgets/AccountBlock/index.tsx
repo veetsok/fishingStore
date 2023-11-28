@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Form from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/FormAccount/index";
+import Form from "user.InterfaceLayer/Libraries/UI_KIT/Cells/FormAccount.cell/index";
 import Orders from "user.InterfaceLayer/Libraries/UI_KIT/Cells/Orders.cell/index";
 
 import Catalog from "../../UI_KIT/Molecules/Catalog.molecule/index";

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import Button from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
 import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 import Colors from "user.InterfaceLayer/constants/colors";
-import Category from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Category.molecule/Category";
+import Category from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/Category.molecule";
 
 import * as ST from "./styled/styled";
 
