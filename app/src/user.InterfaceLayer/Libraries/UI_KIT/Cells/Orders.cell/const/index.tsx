@@ -4,32 +4,12 @@ import ButtonAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom";
 import ButtonEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Button.atom/enum";
 import Colors from "user.InterfaceLayer/constants/colors";
 import TextAtom from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Text.atom";
+import OrderBlock from "user.InterfaceLayer/Libraries/UI_KIT/Molecules/OrderBlock";
 
-import OrderBlock from "../../OrderBlock/index";
 import * as ST from "../styled/styled";
+import { OrdersProps } from "../type";
 
-interface order {
-	id: string;
-	items: CartItem[];
-	total: number;
-	deliveryMethod: string;
-	paymentMethod: string;
-}
-
-interface CartItem {
-	id: string;
-	quantity: number;
-	name: string;
-	price: number;
-	image: string;
-}
-
-interface Props {
-	orders: order[];
-	handleClearOrder: any;
-}
-
-const Orders: React.FC<Props> = ({ orders, handleClearOrder }) => {
+const Orders: React.FC<OrdersProps> = ({ orders, handleClearOrder }) => {
 	return (
 		<>
 			<TextAtom type={TextEnum.enum_Text_H2}>Мои заказы</TextAtom>

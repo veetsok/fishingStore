@@ -8,18 +8,10 @@ import Colors from "user.InterfaceLayer/constants/colors";
 import Image from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Image.atom";
 import ImageEnum from "user.InterfaceLayer/Libraries/UI_KIT/Atoms/Image.atom/enum";
 
+import { CardProps } from "./type";
 import * as ST from "./styled/styled";
 
-type Props = {
-	// id: number;
-	image: string;
-	price: number;
-	name: string;
-
-	handleAddToCart: any;
-};
-
-const Card = ({ name, image, price, handleAddToCart }: Props) => {
+const Card: React.FC<CardProps> = ({ name, image, price, onClick }) => {
 	const { t } = useTranslation();
 
 	return (
@@ -47,7 +39,7 @@ const Card = ({ name, image, price, handleAddToCart }: Props) => {
 				</Text>
 				<Button
 					width="100%"
-					onClick={handleAddToCart}
+					onClick={onClick}
 					type={ButtonEnum.enum_primaryButton}
 				>
 					{t("main.button")}
