@@ -1,11 +1,9 @@
 import React from "react";
 
-import * as ST from "../styled/styled";
-import { SelectInputProps } from "../type";
+import * as ST from "./styled/styled";
+import { SelectInputProps } from "./type";
 
-const SelectInput: React.FC<SelectInputProps> = ({
-	placeholder,
-}: SelectInputProps) => {
+const SelectInput: React.FC<SelectInputProps> = ({ placeholder }) => {
 	return (
 		<ST.block>
 			<ST.Input placeholder={placeholder} />

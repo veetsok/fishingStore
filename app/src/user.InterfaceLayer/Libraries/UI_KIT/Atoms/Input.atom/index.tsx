@@ -1,12 +1,12 @@
 import React, { useCallback } from "react";
 
-import { IInputProps } from "./type";
+import { IInputProps, IInputStyleProps } from "./type";
 import * as ST from "./styled";
 import { InputPropsDefaultProps, dataTestId } from "./const";
 import { InputTypeEnum } from "./enum";
 import { InputMask, checkType } from "./utils";
 
-const Input: React.FC<IInputProps> = (props: IInputProps) => {
+const Input: React.FC<IInputProps & IInputStyleProps> = (props) => {
 	if (props.isError) return <ST.Error>Произошла ошибка</ST.Error>;
 
 	const {

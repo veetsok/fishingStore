@@ -2,21 +2,12 @@ import styled from "styled-components";
 import Colors from "user.InterfaceLayer/constants/colors";
 
 import load from "./animations/load";
+import { InputCommonStyle } from "./commonInputStyles";
 
 export const InputStyle = styled.input`
-	outline: none;
+	${InputCommonStyle}
 	display: flex;
-	color: ${Colors.INPUT};
 	font-size: 18px;
-	height: auto;
-	padding: 12px;
-	gap: 10px;
-	border-radius: 12px;
-	border: 2px solid ${Colors.WHITE};
-	background: ${Colors.WHITE};
-	cursor: pointer;
-	width: 100%;
-
 	&:placeholder {
 		color: ${Colors.INPUT};
 	}
@@ -25,29 +16,6 @@ export const InputStyle = styled.input`
 	&:focus,
 	&:hover {
 		border: 2px solid ${Colors.INPUT};
-	}
-
-	@media (max-width: 768px) {
-		border-radius: 8px;
-		font-size: 16px;
-		height: 30px;
-		padding: 12px;
-		border: 1px solid ${Colors.WHITE};
-		&:active,
-		&:focus,
-		&:hover {
-			border: 1px solid ${Colors.INPUT};
-		}
-	}
-	&::-webkit-calendar-picker-indicator {
-		display: none;
-	}
-
-	@media (max-width: 426px) {
-		font-size: 12px;
-		border: 1px solid ${Colors.WHITE};
-		height: 20px;
-		padding: 8px;
 	}
 `;
 

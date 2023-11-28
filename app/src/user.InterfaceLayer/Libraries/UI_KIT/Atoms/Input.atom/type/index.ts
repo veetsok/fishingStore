@@ -24,3 +24,14 @@ export interface IInputProps extends ExtendsCommonType {
 	type: InputTypeEnum;
 	onChange?: (val: string) => void;
 }
+
+export interface IInputStyleProps {
+	padding?: ICommonComponentProps["padding"];
+	margin?: ICommonComponentProps["margin"];
+	color?: ICommonComponentProps["color"];
+	border?: ICommonComponentProps["border"];
+	borderRadius?: ICommonComponentProps["borderRadius"];
+	background?: ICommonComponentProps["background"];
+	height?: ICommonComponentProps["height"];
+	width?: ICommonComponentProps["width"];
+}
